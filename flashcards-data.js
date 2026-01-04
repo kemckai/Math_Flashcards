@@ -476,5 +476,416 @@ const mathFlashCards = [
     category: "Probability & Statistics",
     question: "If $P(A) = 0.4$, $P(B) = 0.3$, and they are mutually exclusive, what is $P(A \\text{ or } B)$?",
     answer: "$P(A \\text{ or } B) = 0.7$"
+  },
+  
+  // Trigonometry - Basic Definitions
+  {
+    category: "Trigonometry",
+    question: "What does SOH-CAH-TOA stand for?",
+    answer: "Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, Tangent = Opposite/Adjacent"
+  },
+  {
+    category: "Trigonometry",
+    question: "How do you define sine in a right triangle?",
+    answer: "$\\sin(\\theta) = \\frac{\\text{opposite}}{\\text{hypotenuse}}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "How do you define cosine in a right triangle?",
+    answer: "$\\cos(\\theta) = \\frac{\\text{adjacent}}{\\text{hypotenuse}}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "How do you define tangent in a right triangle?",
+    answer: "$\\tan(\\theta) = \\frac{\\text{opposite}}{\\text{adjacent}}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the reciprocal of sine?",
+    answer: "Cosecant: $\\csc(\\theta) = \\frac{1}{\\sin(\\theta)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the reciprocal of cosine?",
+    answer: "Secant: $\\sec(\\theta) = \\frac{1}{\\cos(\\theta)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the reciprocal of tangent?",
+    answer: "Cotangent: $\\cot(\\theta) = \\frac{1}{\\tan(\\theta)} = \\frac{\\cos(\\theta)}{\\sin(\\theta)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the quotient identity for tangent?",
+    answer: "$\\tan(\\theta) = \\frac{\\sin(\\theta)}{\\cos(\\theta)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What are the co-function relationships?",
+    answer: "$\\sin(\\theta) = \\cos(90° - \\theta)$, $\\cos(\\theta) = \\sin(90° - \\theta)$, $\\tan(\\theta) = \\cot(90° - \\theta)$"
+  },
+  
+  // Trigonometry - Unit Circle & Special Angles
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(0°)$ or $\\sin(0)$?",
+    answer: "$\\sin(0) = 0$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(0°)$ or $\\cos(0)$?",
+    answer: "$\\cos(0) = 1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(30°)$ or $\\sin(\\pi/6)$?",
+    answer: "$\\sin(\\pi/6) = \\frac{1}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(30°)$ or $\\cos(\\pi/6)$?",
+    answer: "$\\cos(\\pi/6) = \\frac{\\sqrt{3}}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(45°)$ or $\\sin(\\pi/4)$?",
+    answer: "$\\sin(\\pi/4) = \\frac{\\sqrt{2}}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(45°)$ or $\\cos(\\pi/4)$?",
+    answer: "$\\cos(\\pi/4) = \\frac{\\sqrt{2}}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\tan(45°)$ or $\\tan(\\pi/4)$?",
+    answer: "$\\tan(\\pi/4) = 1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(60°)$ or $\\sin(\\pi/3)$?",
+    answer: "$\\sin(\\pi/3) = \\frac{\\sqrt{3}}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(60°)$ or $\\cos(\\pi/3)$?",
+    answer: "$\\cos(\\pi/3) = \\frac{1}{2}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(90°)$ or $\\sin(\\pi/2)$?",
+    answer: "$\\sin(\\pi/2) = 1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(90°)$ or $\\cos(\\pi/2)$?",
+    answer: "$\\cos(\\pi/2) = 0$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(\\pi)$?",
+    answer: "$\\sin(\\pi) = 0$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(\\pi)$?",
+    answer: "$\\cos(\\pi) = -1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(3\\pi/2)$?",
+    answer: "$\\sin(3\\pi/2) = -1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(3\\pi/2)$?",
+    answer: "$\\cos(3\\pi/2) = 0$"
+  },
+  
+  // Trigonometry - Quadrant Signs & Reference Angles
+  {
+    category: "Trigonometry",
+    question: "What does ASTC stand for (All Students Take Calculus)?",
+    answer: "All (I) - all functions positive; Students (II) - sine positive; Take (III) - tangent positive; Calculus (IV) - cosine positive"
+  },
+  {
+    category: "Trigonometry",
+    question: "In which quadrant are both sine and cosine positive?",
+    answer: "Quadrant I (0° to 90° or 0 to $\\pi/2$)"
+  },
+  {
+    category: "Trigonometry",
+    question: "In which quadrant is sine positive but cosine negative?",
+    answer: "Quadrant II (90° to 180° or $\\pi/2$ to $\\pi$)"
+  },
+  {
+    category: "Trigonometry",
+    question: "In which quadrant are both sine and cosine negative?",
+    answer: "Quadrant III (180° to 270° or $\\pi$ to $3\\pi/2$)"
+  },
+  {
+    category: "Trigonometry",
+    question: "In which quadrant is cosine positive but sine negative?",
+    answer: "Quadrant IV (270° to 360° or $3\\pi/2$ to $2\\pi$)"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is a reference angle?",
+    answer: "The acute angle formed by the terminal side of an angle and the x-axis. Always between 0° and 90° (or 0 and $\\pi/2$)"
+  },
+  
+  // Trigonometry - Identities
+  {
+    category: "Trigonometry",
+    question: "What is the fundamental Pythagorean identity?",
+    answer: "$\\sin^2(\\theta) + \\cos^2(\\theta) = 1$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the Pythagorean identity involving tangent and secant?",
+    answer: "$\\tan^2(\\theta) + 1 = \\sec^2(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the Pythagorean identity involving cotangent and cosecant?",
+    answer: "$\\cot^2(\\theta) + 1 = \\csc^2(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the sum formula for sine?",
+    answer: "$\\sin(A + B) = \\sin(A)\\cos(B) + \\cos(A)\\sin(B)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the difference formula for sine?",
+    answer: "$\\sin(A - B) = \\sin(A)\\cos(B) - \\cos(A)\\sin(B)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the sum formula for cosine?",
+    answer: "$\\cos(A + B) = \\cos(A)\\cos(B) - \\sin(A)\\sin(B)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the difference formula for cosine?",
+    answer: "$\\cos(A - B) = \\cos(A)\\cos(B) + \\sin(A)\\sin(B)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the sum formula for tangent?",
+    answer: "$\\tan(A + B) = \\frac{\\tan(A) + \\tan(B)}{1 - \\tan(A)\\tan(B)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the double angle formula for sine?",
+    answer: "$\\sin(2\\theta) = 2\\sin(\\theta)\\cos(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the double angle formula for cosine?",
+    answer: "$\\cos(2\\theta) = \\cos^2(\\theta) - \\sin^2(\\theta) = 2\\cos^2(\\theta) - 1 = 1 - 2\\sin^2(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the double angle formula for tangent?",
+    answer: "$\\tan(2\\theta) = \\frac{2\\tan(\\theta)}{1 - \\tan^2(\\theta)}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the half angle formula for sine?",
+    answer: "$\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1 - \\cos(\\theta)}{2}}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the half angle formula for cosine?",
+    answer: "$\\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1 + \\cos(\\theta)}{2}}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What are the even/odd identities?",
+    answer: "$\\sin(-\\theta) = -\\sin(\\theta)$ (odd), $\\cos(-\\theta) = \\cos(\\theta)$ (even), $\\tan(-\\theta) = -\\tan(\\theta)$ (odd)"
+  },
+  
+  // Trigonometry - Graphs & Properties
+  {
+    category: "Trigonometry",
+    question: "What is the period of $y = \\sin(x)$?",
+    answer: "Period = $2\\pi$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the period of $y = \\cos(x)$?",
+    answer: "Period = $2\\pi$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the period of $y = \\tan(x)$?",
+    answer: "Period = $\\pi$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the period of $y = \\sec(x)$ and $y = \\csc(x)$?",
+    answer: "Period = $2\\pi$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the period of $y = \\cot(x)$?",
+    answer: "Period = $\\pi$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the amplitude of $y = \\sin(x)$?",
+    answer: "Amplitude = 1 (or the coefficient of the sine function)"
+  },
+  {
+    category: "Trigonometry",
+    question: "For $y = A\\sin(Bx + C) + D$, what does $A$ represent?",
+    answer: "$A$ = amplitude (vertical stretch/compression)"
+  },
+  {
+    category: "Trigonometry",
+    question: "For $y = A\\sin(Bx + C) + D$, what does $B$ represent?",
+    answer: "$B$ affects the period: Period = $\\frac{2\\pi}{B}$"
+  },
+  {
+    category: "Trigonometry",
+    question: "For $y = A\\sin(Bx + C) + D$, what does $C$ represent?",
+    answer: "$C$ = phase shift (horizontal shift). Shift left if $C > 0$, right if $C < 0$"
+  },
+  {
+    category: "Trigonometry",
+    question: "For $y = A\\sin(Bx + C) + D$, what does $D$ represent?",
+    answer: "$D$ = vertical shift (up if positive, down if negative)"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\sin(x)$?",
+    answer: "Range: $[-1, 1]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\cos(x)$?",
+    answer: "Range: $[-1, 1]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\tan(x)$?",
+    answer: "Range: $(-\\infty, \\infty)$ or all real numbers"
+  },
+  
+  // Trigonometry - Inverse Functions
+  {
+    category: "Trigonometry",
+    question: "What is the domain of $y = \\arcsin(x)$ or $\\sin^{-1}(x)$?",
+    answer: "Domain: $[-1, 1]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\arcsin(x)$ or $\\sin^{-1}(x)$?",
+    answer: "Range: $[-\\pi/2, \\pi/2]$ or $[-90°, 90°]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the domain of $y = \\arccos(x)$ or $\\cos^{-1}(x)$?",
+    answer: "Domain: $[-1, 1]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\arccos(x)$ or $\\cos^{-1}(x)$?",
+    answer: "Range: $[0, \\pi]$ or $[0°, 180°]$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the domain of $y = \\arctan(x)$ or $\\tan^{-1}(x)$?",
+    answer: "Domain: $(-\\infty, \\infty)$ or all real numbers"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the range of $y = \\arctan(x)$ or $\\tan^{-1}(x)$?",
+    answer: "Range: $(-\\pi/2, \\pi/2)$ or $(-90°, 90°)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\arcsin(1/2)$?",
+    answer: "$\\arcsin(1/2) = \\pi/6$ or $30°$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\arccos(\\sqrt{2}/2)$?",
+    answer: "$\\arccos(\\sqrt{2}/2) = \\pi/4$ or $45°$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\arctan(1)$?",
+    answer: "$\\arctan(1) = \\pi/4$ or $45°$"
+  },
+  
+  // Trigonometry - Applications
+  {
+    category: "Trigonometry",
+    question: "In a right triangle, if you know one angle and one side, how do you find the other sides?",
+    answer: "Use trigonometric ratios: opposite = hypotenuse $\\times \\sin(\\theta)$, adjacent = hypotenuse $\\times \\cos(\\theta)$, hypotenuse = opposite $/ \\sin(\\theta)$ or adjacent $/ \\cos(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the Law of Sines?",
+    answer: "$\\frac{a}{\\sin(A)} = \\frac{b}{\\sin(B)} = \\frac{c}{\\sin(C)}$ where $a, b, c$ are sides opposite angles $A, B, C$"
+  },
+  {
+    category: "Trigonometry",
+    question: "When do you use the Law of Sines?",
+    answer: "Use when you know: (1) two angles and one side (AAS or ASA), or (2) two sides and an angle opposite one of them (SSA - ambiguous case)"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the Law of Cosines?",
+    answer: "$a^2 = b^2 + c^2 - 2bc\\cos(A)$ (and similar for $b^2$ and $c^2$)"
+  },
+  {
+    category: "Trigonometry",
+    question: "When do you use the Law of Cosines?",
+    answer: "Use when you know: (1) three sides (SSS), or (2) two sides and the included angle (SAS)"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is the area of a triangle given two sides and the included angle?",
+    answer: "$A = \\frac{1}{2}ab\\sin(C)$ where $a$ and $b$ are sides and $C$ is the included angle"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is Heron's formula for area of a triangle?",
+    answer: "$A = \\sqrt{s(s-a)(s-b)(s-c)}$ where $s = \\frac{a+b+c}{2}$ (semi-perimeter)"
+  },
+  
+  // Trigonometry - Common Problems
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin^2(\\theta) + \\cos^2(\\theta)$ equal to?",
+    answer: "$\\sin^2(\\theta) + \\cos^2(\\theta) = 1$ (Pythagorean identity)"
+  },
+  {
+    category: "Trigonometry",
+    question: "If $\\sin(\\theta) = 3/5$ and $\\theta$ is in quadrant I, what is $\\cos(\\theta)$?",
+    answer: "Use identity: $\\cos^2(\\theta) = 1 - \\sin^2(\\theta) = 1 - (3/5)^2 = 16/25$, so $\\cos(\\theta) = 4/5$ (positive in QI)"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(\\pi - \\theta)$ equal to?",
+    answer: "$\\sin(\\pi - \\theta) = \\sin(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(\\pi - \\theta)$ equal to?",
+    answer: "$\\cos(\\pi - \\theta) = -\\cos(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\sin(\\pi/2 - \\theta)$ equal to?",
+    answer: "$\\sin(\\pi/2 - \\theta) = \\cos(\\theta)$"
+  },
+  {
+    category: "Trigonometry",
+    question: "What is $\\cos(\\pi/2 - \\theta)$ equal to?",
+    answer: "$\\cos(\\pi/2 - \\theta) = \\sin(\\theta)$"
   }
 ];

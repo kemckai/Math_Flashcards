@@ -50,6 +50,7 @@
             <button id="flip-btn" class="btn btn-primary">Flip Card</button>
             <button id="example-btn" class="btn btn-secondary">Example</button>
             <button id="next-btn" class="btn btn-secondary">Next →</button>
+            <button id="unit-circle-toggle-btn" class="btn btn-secondary">Unit Circle</button>
         </div>
 
         <div class="example-section" id="example-section">
@@ -74,6 +75,45 @@
             <div class="stat-item">
                 <span class="stat-label">Current Category:</span>
                 <span class="stat-value" id="current-category">-</span>
+            </div>
+        </div>
+
+        <div class="unit-circle-section" id="unit-circle-section">
+            <div class="unit-circle-header">
+                <h2>Unit Circle Visualization</h2>
+                <p class="unit-circle-equation">$x^2 + y^2 = 1$</p>
+            </div>
+            <div class="unit-circle-container">
+                <canvas id="unit-circle-canvas" width="500" height="500"></canvas>
+            </div>
+            <div class="unit-circle-controls">
+                <div class="unit-circle-slider-container">
+                    <label for="theta-slider">θ (theta):</label>
+                    <input type="range" id="theta-slider" min="0" max="6.28318" step="0.01" value="0.785398">
+                    <span id="theta-slider-value">π/4</span>
+                </div>
+                <div class="unit-circle-values" id="unit-circle-values">
+                    <div class="value-item">
+                        <span class="value-label">θ =</span>
+                        <span id="theta-value">π/4 rad = 45°</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">sin(θ) =</span>
+                        <span id="sin-value">0.707</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">cos(θ) =</span>
+                        <span id="cos-value">0.707</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">tan(θ) =</span>
+                        <span id="tan-value">1.000</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">Point P =</span>
+                        <span id="point-value">(0.707, 0.707)</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

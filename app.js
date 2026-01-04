@@ -405,8 +405,414 @@ class FlashCardApp {
     }
 }
 
+// Unit Circle Visualization
+class UnitCircleVisualization {
+    constructor() {
+        this.canvas = document.getElementById('unit-circle-canvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.theta = Math.PI / 4; // Initial value π/4
+        this.isDragging = false;
+        this.radius = 180; // Canvas radius in pixels
+        this.centerX = this.canvas.width / 2;
+        this.centerY = this.canvas.height / 2;
+        
+        this.slider = document.getElementById('theta-slider');
+        this.thetaValueSpan = document.getElementById('theta-slider-value');
+        this.thetaValueDisplay = document.getElementById('theta-value');
+        this.sinValue = document.getElementById('sin-value');
+        this.cosValue = document.getElementById('cos-value');
+        this.tanValue = document.getElementById('tan-value');
+        this.pointValue = document.getElementById('point-value');
+        
+        this.setupEventListeners();
+        this.updateVisualization();
+    }
+
+    setupEventListeners() {
+        // Slider change
+        this.slider.addEventListener('input', (e) => {
+            this.theta = parseFloat(e.target.value);
+            this.handleSliderChange();
+        });
+
+        // Mouse drag for point
+        this.canvas.addEventListener('mousedown', (e) => this.handleMouseDown(e));
+        this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+        this.canvas.addEventListener('mouseup', () => this.handleMouseUp());
+        this.canvas.addEventListener('mouseleave', () => this.handleMouseUp());
+
+        // Touch support for mobile
+        this.canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const mouseEvent = new MouseEvent('mousedown', {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            this.canvas.dispatchEvent(mouseEvent);
+        });
+
+        this.canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const mouseEvent = new MouseEvent('mousemove', {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            this.canvas.dispatchEvent(mouseEvent);
+        });
+
+        this.canvas.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            this.handleMouseUp();
+        });
+    }
+
+    handleSliderChange() {
+        this.updateVisualization();
+    }
+
+    handleMouseDown(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // Convert to canvas coordinates
+        const canvasX = x * (this.canvas.width / rect.width);
+        const canvasY = y * (this.canvas.height / rect.height);
+        
+        // Check if clicking near the point
+        const pointX = this.centerX + this.radius * Math.cos(this.theta);
+        const pointY = this.centerY - this.radius * Math.sin(this.theta); // Negative because canvas Y is inverted
+        
+        const distance = Math.sqrt(
+            Math.pow(canvasX - pointX, 2) + Math.pow(canvasY - pointY, 2)
+        );
+        
+        if (distance < 30) {
+            this.isDragging = true;
+        } else {
+            // Snap to circle if clicking elsewhere on circle
+            const dx = canvasX - this.centerX;
+            const dy = this.centerY - canvasY; // Invert Y
+            const distanceFromCenter = Math.sqrt(dx * dx + dy * dy);
+            
+            if (Math.abs(distanceFromCenter - this.radius) < 30) {
+                this.theta = Math.atan2(dy, dx);
+                if (this.theta < 0) this.theta += 2 * Math.PI;
+                this.slider.value = this.theta;
+                this.updateVisualization();
+            }
+        }
+    }
+
+    handleMouseMove(e) {
+        if (!this.isDragging) return;
+        
+        const rect = this.canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // Convert to canvas coordinates
+        const canvasX = x * (this.canvas.width / rect.width);
+        const canvasY = y * (this.canvas.height / rect.height);
+        
+        // Calculate angle from center
+        const dx = canvasX - this.centerX;
+        const dy = this.centerY - canvasY; // Invert Y because canvas Y is inverted
+        
+        this.theta = Math.atan2(dy, dx);
+        if (this.theta < 0) this.theta += 2 * Math.PI;
+        
+        this.slider.value = this.theta;
+        this.updateVisualization();
+    }
+
+    handleMouseUp() {
+        this.isDragging = false;
+    }
+
+    updateVisualization() {
+        this.drawCircle();
+        this.drawAxes();
+        this.drawKeyPoints();
+        this.drawTriangle();
+        this.drawPoint();
+        this.updateValues();
+    }
+
+    drawCircle() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        // Draw circle
+        this.ctx.beginPath();
+        this.ctx.arc(this.centerX, this.centerY, this.radius, 0, 2 * Math.PI);
+        this.ctx.strokeStyle = '#333';
+        this.ctx.lineWidth = 2;
+        this.ctx.stroke();
+    }
+
+    drawAxes() {
+        this.ctx.strokeStyle = '#999';
+        this.ctx.lineWidth = 1;
+        
+        // X-axis
+        this.ctx.beginPath();
+        this.ctx.moveTo(0, this.centerY);
+        this.ctx.lineTo(this.canvas.width, this.centerY);
+        this.ctx.stroke();
+        
+        // Y-axis
+        this.ctx.beginPath();
+        this.ctx.moveTo(this.centerX, 0);
+        this.ctx.lineTo(this.centerX, this.canvas.height);
+        this.ctx.stroke();
+        
+        // Axis labels
+        this.ctx.fillStyle = '#666';
+        this.ctx.font = '14px Arial';
+        this.ctx.textAlign = 'center';
+        
+        // X-axis label
+        this.ctx.fillText('x', this.canvas.width - 15, this.centerY - 10);
+        
+        // Y-axis label
+        this.ctx.save();
+        this.ctx.translate(this.centerX - 15, 15);
+        this.ctx.fillText('y', 0, 0);
+        this.ctx.restore();
+        
+        // Origin label
+        this.ctx.fillText('O', this.centerX - 12, this.centerY + 20);
+        
+        // Scale markers
+        this.ctx.strokeStyle = '#ccc';
+        this.ctx.lineWidth = 0.5;
+        const tickLength = 5;
+        
+        // X-axis ticks
+        for (let i = -1; i <= 1; i++) {
+            if (i === 0) continue;
+            const x = this.centerX + i * this.radius;
+            this.ctx.beginPath();
+            this.ctx.moveTo(x, this.centerY - tickLength);
+            this.ctx.lineTo(x, this.centerY + tickLength);
+            this.ctx.stroke();
+            
+            // Labels
+            this.ctx.fillText(i === 1 ? '1' : '-1', x, this.centerY + 20);
+        }
+        
+        // Y-axis ticks
+        for (let i = -1; i <= 1; i++) {
+            if (i === 0) continue;
+            const y = this.centerY - i * this.radius; // Negative because canvas Y is inverted
+            this.ctx.beginPath();
+            this.ctx.moveTo(this.centerX - tickLength, y);
+            this.ctx.lineTo(this.centerX + tickLength, y);
+            this.ctx.stroke();
+            
+            // Labels
+            this.ctx.textAlign = 'right';
+            this.ctx.fillText(i === 1 ? '1' : '-1', this.centerX - 10, y + 4);
+            this.ctx.textAlign = 'center';
+        }
+    }
+
+    drawKeyPoints() {
+        const keyPoints = [
+            { angle: 0, x: 1, y: 0, label: '(1, 0)' },
+            { angle: Math.PI / 6, x: Math.sqrt(3) / 2, y: 0.5, label: '(√3/2, 1/2)' },
+            { angle: Math.PI / 4, x: Math.sqrt(2) / 2, y: Math.sqrt(2) / 2, label: '(√2/2, √2/2)' },
+            { angle: Math.PI / 3, x: 0.5, y: Math.sqrt(3) / 2, label: '(1/2, √3/2)' },
+            { angle: Math.PI / 2, x: 0, y: 1, label: '(0, 1)' }
+        ];
+        
+        this.ctx.fillStyle = '#667eea';
+        this.ctx.strokeStyle = '#667eea';
+        
+        keyPoints.forEach(point => {
+            const px = this.centerX + point.x * this.radius;
+            const py = this.centerY - point.y * this.radius;
+            
+            // Draw point
+            this.ctx.beginPath();
+            this.ctx.arc(px, py, 4, 0, 2 * Math.PI);
+            this.ctx.fill();
+            
+            // Draw label (only if not at current angle)
+            if (Math.abs(this.theta - point.angle) > 0.1) {
+                this.ctx.fillStyle = '#667eea';
+                this.ctx.font = '11px Arial';
+                this.ctx.textAlign = 'center';
+                this.ctx.fillText(point.label, px, py - 10);
+            }
+        });
+    }
+
+    drawTriangle() {
+        const cosTheta = Math.cos(this.theta);
+        const sinTheta = Math.sin(this.theta);
+        
+        const x1 = this.centerX;
+        const y1 = this.centerY;
+        const x2 = this.centerX + cosTheta * this.radius;
+        const y2 = this.centerY;
+        const x3 = this.centerX + cosTheta * this.radius;
+        const y3 = this.centerY - sinTheta * this.radius;
+        
+        // Draw triangle
+        this.ctx.strokeStyle = '#ff6b6b';
+        this.ctx.fillStyle = 'rgba(255, 107, 107, 0.2)';
+        this.ctx.lineWidth = 2;
+        
+        this.ctx.beginPath();
+        this.ctx.moveTo(x1, y1);
+        this.ctx.lineTo(x2, y2);
+        this.ctx.lineTo(x3, y3);
+        this.ctx.closePath();
+        this.ctx.fill();
+        this.ctx.stroke();
+        
+        // Draw right angle indicator
+        if (cosTheta > 0.1) {
+            const indicatorSize = 10;
+            this.ctx.strokeStyle = '#ff6b6b';
+            this.ctx.lineWidth = 1.5;
+            this.ctx.beginPath();
+            this.ctx.moveTo(x2 - indicatorSize, y2);
+            this.ctx.lineTo(x2 - indicatorSize, y2 - indicatorSize);
+            this.ctx.lineTo(x2, y2 - indicatorSize);
+            this.ctx.stroke();
+        }
+    }
+
+    drawPoint() {
+        const cosTheta = Math.cos(this.theta);
+        const sinTheta = Math.sin(this.theta);
+        
+        const px = this.centerX + cosTheta * this.radius;
+        const py = this.centerY - sinTheta * this.radius;
+        
+        // Draw line from center to point
+        this.ctx.strokeStyle = '#667eea';
+        this.ctx.lineWidth = 2;
+        this.ctx.setLineDash([5, 5]);
+        this.ctx.beginPath();
+        this.ctx.moveTo(this.centerX, this.centerY);
+        this.ctx.lineTo(px, py);
+        this.ctx.stroke();
+        this.ctx.setLineDash([]);
+        
+        // Draw point
+        this.ctx.fillStyle = '#667eea';
+        this.ctx.strokeStyle = '#fff';
+        this.ctx.lineWidth = 3;
+        this.ctx.beginPath();
+        this.ctx.arc(px, py, 8, 0, 2 * Math.PI);
+        this.ctx.fill();
+        this.ctx.stroke();
+        
+        // Draw label
+        this.ctx.fillStyle = '#333';
+        this.ctx.font = 'bold 12px Arial';
+        this.ctx.textAlign = 'center';
+        const labelY = py - 15;
+        this.ctx.fillText('P', px, labelY);
+    }
+
+    updateValues() {
+        const cosTheta = Math.cos(this.theta);
+        const sinTheta = Math.sin(this.theta);
+        const tanTheta = Math.tan(this.theta);
+        
+        // Update slider display
+        const angleInDegrees = (this.theta * 180) / Math.PI;
+        let sliderText = '';
+        if (Math.abs(this.theta) < 0.01) {
+            sliderText = '0';
+        } else if (Math.abs(this.theta - Math.PI / 6) < 0.01) {
+            sliderText = 'π/6';
+        } else if (Math.abs(this.theta - Math.PI / 4) < 0.01) {
+            sliderText = 'π/4';
+        } else if (Math.abs(this.theta - Math.PI / 3) < 0.01) {
+            sliderText = 'π/3';
+        } else if (Math.abs(this.theta - Math.PI / 2) < 0.01) {
+            sliderText = 'π/2';
+        } else if (Math.abs(this.theta - (2 * Math.PI / 3)) < 0.01) {
+            sliderText = '2π/3';
+        } else if (Math.abs(this.theta - (3 * Math.PI / 4)) < 0.01) {
+            sliderText = '3π/4';
+        } else if (Math.abs(this.theta - (5 * Math.PI / 6)) < 0.01) {
+            sliderText = '5π/6';
+        } else if (Math.abs(this.theta - Math.PI) < 0.01) {
+            sliderText = 'π';
+        } else if (Math.abs(this.theta - (7 * Math.PI / 6)) < 0.01) {
+            sliderText = '7π/6';
+        } else if (Math.abs(this.theta - (5 * Math.PI / 4)) < 0.01) {
+            sliderText = '5π/4';
+        } else if (Math.abs(this.theta - (4 * Math.PI / 3)) < 0.01) {
+            sliderText = '4π/3';
+        } else if (Math.abs(this.theta - (3 * Math.PI / 2)) < 0.01) {
+            sliderText = '3π/2';
+        } else if (Math.abs(this.theta - (5 * Math.PI / 3)) < 0.01) {
+            sliderText = '5π/3';
+        } else if (Math.abs(this.theta - (7 * Math.PI / 4)) < 0.01) {
+            sliderText = '7π/4';
+        } else if (Math.abs(this.theta - (11 * Math.PI / 6)) < 0.01) {
+            sliderText = '11π/6';
+        } else if (Math.abs(this.theta - 2 * Math.PI) < 0.01) {
+            sliderText = '2π';
+        } else {
+            sliderText = this.theta.toFixed(3);
+        }
+        this.thetaValueSpan.textContent = sliderText;
+        
+        // Update theta display
+        this.thetaValueDisplay.textContent = 
+            `${this.theta.toFixed(3)} rad = ${angleInDegrees.toFixed(1)}°`;
+        
+        // Update sin
+        this.sinValue.textContent = sinTheta.toFixed(3);
+        
+        // Update cos
+        this.cosValue.textContent = cosTheta.toFixed(3);
+        
+        // Update tan (handle undefined)
+        if (Math.abs(Math.cos(this.theta)) < 0.0001) {
+            this.tanValue.textContent = 'undefined';
+        } else {
+            this.tanValue.textContent = tanTheta.toFixed(3);
+        }
+        
+        // Update point coordinates
+        this.pointValue.textContent = 
+            `(${cosTheta.toFixed(3)}, ${sinTheta.toFixed(3)})`;
+    }
+}
+
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new FlashCardApp();
+    
+    // Initialize unit circle visualization
+    let unitCircle = null;
+    const unitCircleSection = document.getElementById('unit-circle-section');
+    const unitCircleToggleBtn = document.getElementById('unit-circle-toggle-btn');
+    
+    unitCircleToggleBtn.addEventListener('click', () => {
+        if (unitCircleSection.classList.contains('show')) {
+            unitCircleSection.classList.remove('show');
+            unitCircleToggleBtn.textContent = 'Unit Circle';
+        } else {
+            unitCircleSection.classList.add('show');
+            unitCircleToggleBtn.textContent = 'Hide Unit Circle';
+            if (!unitCircle) {
+                unitCircle = new UnitCircleVisualization();
+            } else {
+                unitCircle.updateVisualization();
+            }
+        }
+    });
 });
 
