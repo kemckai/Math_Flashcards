@@ -1,18 +1,13 @@
-# Jekyll Configuration for Math Flash Cards
-
 title: Math Flash Cards
 description: Interactive math flash cards for studying algebra, geometry, trigonometry, and more
 baseurl: "/Math_Flashcards"
 url: "https://kemckai.github.io"
 
-# Build settings
 markdown: kramdown
 
-# Plugins
 plugins:
   - jekyll-feed
 
-# Exclude files from processing
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -26,7 +21,6 @@ exclude:
   - Math_Flashcards_note.pdf
   - Untitled.rtf
 
-# Collections
 collections:
   flashcards:
     output: false
