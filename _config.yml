@@ -12,6 +12,8 @@ markdown: kramdown
 # Plugins
 plugins:
   - jekyll-feed
+ #Theme
+  theme: minima
 
 # Exclude files from processing
 exclude:
