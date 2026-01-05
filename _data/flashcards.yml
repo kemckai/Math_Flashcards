@@ -793,6 +793,26 @@
     <div class="step"><span class="step-label">Step 1:</span> Since mutually exclusive, $P(A \\text{ and } B) = 0$</div>
     <div class="step"><span class="step-label">Step 2:</span> $P(A \\text{ or } B) = P(A) + P(B) = 0.4 + 0.3 = 0.7$</div>
     <p><strong>Answer:</strong> $P(A \\text{ or } B) = 0.7$</p>
+- category: "Probability & Statistics"
+  question: "What is a weighted average and how do you calculate it?"
+  answer: 'Weighted average = $\frac{\sum (\text{value} \times \text{weight})}{\sum \text{weights}}$ where each value is multiplied by its weight (frequency or importance)'
+  example: |
+    <p><strong>Example:</strong> A student has test scores: 85 (worth 20%), 90 (worth 30%), and 92 (worth 50%). Find the weighted average.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Multiply each score by its weight: $85 \times 0.20 = 17$, $90 \times 0.30 = 27$, $92 \times 0.50 = 46$</div>
+    <div class="step"><span class="step-label">Step 2:</span> Sum the weighted values: $17 + 27 + 46 = 90$</div>
+    <div class="step"><span class="step-label">Step 3:</span> Sum the weights: $0.20 + 0.30 + 0.50 = 1.00$</div>
+    <div class="step"><span class="step-label">Step 4:</span> Weighted average = $\frac{90}{1.00} = 90$</div>
+    <p><strong>Answer:</strong> Weighted average = $90$ (vs. regular average of $89$)</p>
+- category: "Probability & Statistics"
+  question: "How do you calculate a weighted mean when given frequencies?"
+  answer: 'Weighted mean = $\frac{\sum (x_i \times f_i)}{\sum f_i}$ where $x_i$ are values and $f_i$ are their frequencies'
+  example: |
+    <p><strong>Example:</strong> Calculate the weighted mean for: 5 students scored 80, 8 students scored 85, 12 students scored 90.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Multiply each value by frequency: $80 \times 5 = 400$, $85 \times 8 = 680$, $90 \times 12 = 1080$</div>
+    <div class="step"><span class="step-label">Step 2:</span> Sum weighted values: $400 + 680 + 1080 = 2160$</div>
+    <div class="step"><span class="step-label">Step 3:</span> Sum frequencies: $5 + 8 + 12 = 25$</div>
+    <div class="step"><span class="step-label">Step 4:</span> Weighted mean = $\frac{2160}{25} = 86.4$</div>
+    <p><strong>Answer:</strong> Weighted mean = $86.4$</p>
 
 - category: "Trigonometry"
   question: "What does SOH-CAH-TOA stand for?"
