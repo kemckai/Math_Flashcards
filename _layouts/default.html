@@ -21,6 +21,10 @@
         {{ content }}
     </div>
 
+    <script>
+    // Embed flashcards data from Jekyll
+    const mathFlashCards = {{ site.data.flashcards | jsonify }};
+    </script>
     <script src="{{ '/app.js' | relative_url }}"></script>
 </body>
 </html>
