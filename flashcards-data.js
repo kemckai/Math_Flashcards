@@ -48,7 +48,7 @@ const mathFlashCards = [
     answer: "$y = a(x - h)^2 + k$ where the vertex is at $(h, k)$",
     example: `<p><strong>Example:</strong> Write $y = 2x^2 - 8x + 5$ in vertex form.</p>
       <div class="step"><span class="step-label">Step 1:</span> Complete the square: $y = 2(x^2 - 4x) + 5$</div>
-      <div class="step"><span class="step-label">Step 2:</span> Add and subtract $(\\frac{4}{2})^2 = 4$: $y = 2(x^2 - 4x + 4 - 4) + 5$</div>
+      <div class="step"><span class="step-label">Step 2:</span> Add and subtract $(\\frac{f i qyl4}{2})^2 = 4$: $y = 2(x^2 - 4x + 4 - 4) + 5$</div>
       <div class="step"><span class="step-label">Step 3:</span> Factor: $y = 2((x - 2)^2 - 4) + 5 = 2(x - 2)^2 - 8 + 5$</div>
       <div class="step"><span class="step-label">Step 4:</span> Simplify: $y = 2(x - 2)^2 - 3$</div>
       <p><strong>Answer:</strong> $y = 2(x - 2)^2 - 3$, vertex at $(2, -3)$</p>`
@@ -93,7 +93,7 @@ const mathFlashCards = [
       <div class="step"><span class="step-label">Step 2:</span> Add the equations: $(2x + 3y) + (x - 3y) = 7 + (-1)$</div>
       <div class="step"><span class="step-label">Step 3:</span> Simplify: $3x = 6$ → $x = 2$</div>
       <div class="step"><span class="step-label">Step 4:</span> Substitute $x = 2$ into first equation: $2(2) + 3y = 7$ → $3y = 3$ → $y = 1$</div>
-      <p><strong>Answer:</strong> $x = 2$, $y = 1$</p>`
+      <p><strong>Answer:</strong> $x = 2$, $y = 1$</p>`kyl
   },
   {
     category: "Systems of Equations",
