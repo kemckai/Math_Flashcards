@@ -4,8 +4,6 @@ title: Math Flash Cards
 description: Interactive math flash cards for studying algebra, geometry, trigonometry, and more
 baseurl: "/Math_Flashcards" # GitHub Pages repository name
 url: "https://kemckai.github.io" # GitHub Pages base URL
- #Theme
-  remote_theme: creative-theme-jekyll
 
 # Build settings
 markdown: kramdown
