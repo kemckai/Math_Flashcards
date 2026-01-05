@@ -1,0 +1,37 @@
+# Jekyll Configuration for Math Flash Cards
+
+title: Math Flash Cards
+description: Interactive math flash cards for studying algebra, geometry, trigonometry, and more
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+# No theme - using custom styles
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github/
+  - README.md
+  - Math_Flashcards_note.pdf
+  - Untitled.rtf
+
+# MathJax settings
+mathjax: true
+
+# Collections (if needed later)
+collections:
+  flashcards:
+    output: false
+

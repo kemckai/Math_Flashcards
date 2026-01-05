@@ -1,125 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Flash Cards</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            }
-        };
-    </script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>📚 Math Flash Cards</h1>
-            <div class="progress-info">
-                <span id="card-counter">Card 1 of 50</span>
-                <span id="category-name">Linear Equations & Forms</span>
-            </div>
-        </header>
+---
+layout: default
+---
 
-        <div class="flashcard-container">
-            <div class="flashcard" id="flashcard">
-                <div class="card-front">
-                    <div class="category-badge" id="category-badge">Linear Equations & Forms</div>
-                    <div class="card-content">
-                        <div class="question-label">Question</div>
-                        <div class="question-text" id="question-text">Loading...</div>
-                    </div>
-                </div>
-                <div class="card-back">
-                    <div class="category-badge" id="category-badge-back">Linear Equations & Forms</div>
-                    <div class="card-content">
-                        <div class="answer-label">Answer</div>
-                        <div class="answer-text" id="answer-text">Loading...</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{% include header.html %}
+{% include flashcard.html %}
+{% include controls.html %}
+{% include stats.html %}
+{% include unit-circle.html %}
 
-        <div class="controls">
-            <button id="prev-btn" class="btn btn-secondary">← Previous</button>
-            <button id="flip-btn" class="btn btn-primary">Flip Card</button>
-            <button id="example-btn" class="btn btn-secondary">Example</button>
-            <button id="next-btn" class="btn btn-secondary">Next →</button>
-            <button id="unit-circle-toggle-btn" class="btn btn-secondary">Unit Circle</button>
-        </div>
-
-        <div class="example-section" id="example-section">
-            <div class="example-content" id="example-content">
-                <div class="example-label">Example</div>
-                <div class="example-text" id="example-text"></div>
-            </div>
-        </div>
-
-        <div class="category-filter">
-            <label for="category-select">Filter by Category:</label>
-            <select id="category-select">
-                <option value="all">All Categories</option>
-            </select>
-        </div>
-
-        <div class="stats">
-            <div class="stat-item">
-                <span class="stat-label">Total Cards:</span>
-                <span class="stat-value" id="total-cards">0</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label">Current Category:</span>
-                <span class="stat-value" id="current-category">-</span>
-            </div>
-        </div>
-
-        <div class="unit-circle-section" id="unit-circle-section">
-            <div class="unit-circle-header">
-                <h2>Unit Circle Visualization</h2>
-                <p class="unit-circle-equation">$x^2 + y^2 = 1$</p>
-            </div>
-            <div class="unit-circle-container">
-                <canvas id="unit-circle-canvas" width="500" height="500"></canvas>
-            </div>
-            <div class="unit-circle-controls">
-                <div class="unit-circle-slider-container">
-                    <label for="theta-slider">θ (theta):</label>
-                    <input type="range" id="theta-slider" min="0" max="6.28318" step="0.01" value="0.785398">
-                    <span id="theta-slider-value">π/4</span>
-                </div>
-                <div class="unit-circle-values" id="unit-circle-values">
-                    <div class="value-item">
-                        <span class="value-label">θ =</span>
-                        <span id="theta-value">π/4 rad = 45°</span>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-label">sin(θ) =</span>
-                        <span id="sin-value">0.707</span>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-label">cos(θ) =</span>
-                        <span id="cos-value">0.707</span>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-label">tan(θ) =</span>
-                        <span id="tan-value">1.000</span>
-                    </div>
-                    <div class="value-item">
-                        <span class="value-label">Point P =</span>
-                        <span id="point-value">(0.707, 0.707)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="flashcards-data.js"></script>
-    <script src="app.js"></script>
-</body>
-</html>
-
+<script>
+// Embed flashcards data from Jekyll
+const mathFlashCards = {{ site.data.flashcards | jsonify }};
+</script>
