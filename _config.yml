@@ -1,26 +1,13 @@
 title: Math Flash Cards
-description: Interactive math flash cards for studying algebra, geometry, trigonometry, and more
+description: Interactive math flash cards
 baseurl: "/Math_Flashcards"
 url: "https://kemckai.github.io"
-
 markdown: kramdown
-
 plugins:
   - jekyll-feed
-
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .github/
-  - README.md
-  - Math_Flashcards_note.pdf
-  - Untitled.rtf
-
 collections:
   flashcards:
     output: false
