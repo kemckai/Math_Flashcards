@@ -23,7 +23,12 @@
 
     <script>
     // Embed flashcards data from Jekyll
+    {% if site.data.flashcards %}
     const mathFlashCards = {{ site.data.flashcards | jsonify }};
+    {% else %}
+    console.error('Flashcards data not found!');
+    const mathFlashCards = [];
+    {% endif %}
     </script>
     <script src="{{ '/app.js' | relative_url }}"></script>
 </body>
