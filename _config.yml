@@ -5,9 +5,11 @@ description: Interactive math flash cards for studying algebra, geometry, trigon
 baseurl: "/Math_Flashcards" # GitHub Pages repository name
 url: "https://kemckai.github.io" # GitHub Pages base URL
 
+# Theme
+remote_theme: creative-theme-jekyll
+
 # Build settings
 markdown: kramdown
-# No theme - using custom styles
 
 # Plugins
 plugins:
