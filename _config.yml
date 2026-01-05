@@ -27,8 +27,7 @@ exclude:
   - Math_Flashcards_note.pdf
   - Untitled.rtf
 
-# MathJax settings
-mathjax: true
+# MathJax is configured in the layout file
 
 # Collections (if needed later)
 collections:
