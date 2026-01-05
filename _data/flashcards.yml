@@ -1,6 +1,6 @@
 - category: "Linear Equations & Forms"
   question: "What is the slope formula?"
-  answer: "$m = \frac{y_2 - y_1}{x_2 - x_1}$"
+  answer: "$m = \\frac{y_2 - y_1}{x_2 - x_1}$"
   example: |
     <p><strong>Example:</strong> Find the slope of the line passing through points $(2, 3)$ and $(5, 9)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify the points: $(x_1, y_1) = (2, 3)$ and $(x_2, y_2) = (5, 9)$</div>
@@ -28,7 +28,7 @@
 
 - category: "Quadratic Equations"
   question: "What is the quadratic formula?"
-  answer: "$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$"
+  answer: "$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$"
   example: |
     <p><strong>Example:</strong> Solve $x^2 - 5x + 6 = 0$ using the quadratic formula.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify $a = 1$, $b = -5$, $c = 6$</div>
@@ -50,7 +50,7 @@
 
 - category: "Quadratic Equations"
   question: "How do you find the x-coordinate of the vertex from standard form?"
-  answer: "$x = \frac{-b}{2a}$"
+  answer: "$x = \\frac{-b}{2a}$"
   example: |
     <p><strong>Example:</strong> Find the x-coordinate of the vertex of $y = 2x^2 - 8x + 5$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify $a = 2$, $b = -8$</div>
@@ -136,7 +136,7 @@
 
 - category: "Inequalities"
   question: "How do you graph inequalities?"
-  answer: "Closed circle $(\bullet)$ for $\geq$ or $\leq$; open circle $(\odot)$ for $>$ or $<$. Shade left for 'less than', right for 'greater than'"
+  answer: "Closed circle $(\\bullet)$ for $\\geq$ or $\\leq$; open circle $(\\odot)$ for $>$ or $<$. Shade left for 'less than', right for 'greater than'"
   example: |
     <p><strong>Example:</strong> Graph $x \\geq 3$ and $x < -2$.</p>
     <div class="step"><span class="step-label">For $x \\geq 3$:</span> Closed circle at 3, shade to the right (includes 3)</div>
@@ -173,7 +173,7 @@
 
 - category: "Temperature Conversions"
   question: "How do you convert Celsius to Fahrenheit?"
-  answer: "$°F = (°C \times \frac{9}{5}) + 32$"
+  answer: "$°F = (°C \\times \\frac{9}{5}) + 32$"
   example: |
     <p><strong>Example:</strong> Convert $25°C$ to Fahrenheit.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $°F = (°C \\times \\frac{9}{5}) + 32$</div>
@@ -182,7 +182,7 @@
 
 - category: "Temperature Conversions"
   question: "How do you convert Fahrenheit to Celsius?"
-  answer: "$°C = (°F - 32) \times \frac{5}{9}$"
+  answer: "$°C = (°F - 32) \\times \\frac{5}{9}$"
   example: |
     <p><strong>Example:</strong> Convert $68°F$ to Celsius.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $°C = (°F - 32) \\times \\frac{5}{9}$</div>
@@ -199,7 +199,7 @@
 
 - category: "Temperature Conversions"
   question: "What is a hot summer day approximately in both scales?"
-  answer: "$\sim 32°C \approx 90°F$"
+  answer: "$\\sim 32°C \\approx 90°F$"
   example: |
     <p><strong>Example:</strong> Convert $32°C$ to Fahrenheit to verify.</p>
     <div class="step"><span class="step-label">Calculation:</span> $°F = (32 \\times \\frac{9}{5}) + 32 = 57.6 + 32 = 89.6°F \\approx 90°F$</div>
@@ -207,7 +207,7 @@
 
 - category: "Temperature Conversions"
   question: "What is comfortable room temperature approximately in both scales?"
-  answer: "$\sim 22°C \approx 72°F$"
+  answer: "$\\sim 22°C \\approx 72°F$"
   example: |
     <p><strong>Example:</strong> Convert $22°C$ to Fahrenheit to verify.</p>
     <div class="step"><span class="step-label">Calculation:</span> $°F = (22 \\times \\frac{9}{5}) + 32 = 39.6 + 32 = 71.6°F \\approx 72°F$</div>
@@ -224,7 +224,7 @@
 
 - category: "Domain & Range"
   question: "What is the domain and range of quadratic functions (parabolas)?"
-  answer: "Domain: all real numbers; Range: $[\text{vertex } y, \infty)$ if opens up or $(-\infty, \text{vertex } y]$ if opens down"
+  answer: "Domain: all real numbers; Range: $[\\text{vertex } y, \\infty)$ if opens up or $(-\\infty, \\text{vertex } y]$ if opens down"
   example: |
     <p><strong>Example:</strong> Find range of $f(x) = 2x^2 - 8x + 5$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Domain: all real numbers</div>
@@ -234,7 +234,7 @@
 
 - category: "Domain & Range"
   question: "What is the domain and range of square root functions?"
-  answer: "Domain: inside $\geq 0$; Range: $y \geq 0$"
+  answer: "Domain: inside $\\geq 0$; Range: $y \\geq 0$"
   example: |
     <p><strong>Example:</strong> Find domain and range of $f(x) = \\sqrt{x - 4}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Domain: inside must be $\\geq 0$: $x - 4 \\geq 0$ → $x \\geq 4$</div>
@@ -243,7 +243,7 @@
 
 - category: "Domain & Range"
   question: "What is the domain of rational functions (1 over linear)?"
-  answer: "Domain: denominator $\neq 0$; vertical asymptote where denominator = 0"
+  answer: "Domain: denominator $\\neq 0$; vertical asymptote where denominator = 0"
   example: |
     <p><strong>Example:</strong> Find domain of $f(x) = \\frac{x + 1}{x - 5}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Set denominator $= 0$: $x - 5 = 0$ → $x = 5$</div>
@@ -252,7 +252,7 @@
 
 - category: "Domain & Range"
   question: "What is the domain and range of absolute value functions?"
-  answer: "Domain: all real numbers; Range: $y \geq \text{vertex } y$"
+  answer: "Domain: all real numbers; Range: $y \\geq \\text{vertex } y$"
   example: |
     <p><strong>Example:</strong> Find domain and range of $f(x) = |x - 3| + 2$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Domain: all real numbers</div>
@@ -262,7 +262,7 @@
 
 - category: "Exponential Functions"
   question: "What is the general form of an exponential function?"
-  answer: "$f(x) = a \cdot b^x$ where $a$ = starting value, $b$ = base"
+  answer: "$f(x) = a \\cdot b^x$ where $a$ = starting value, $b$ = base"
   example: |
     <p><strong>Example:</strong> Identify $a$ and $b$ in $f(x) = 5 \\cdot 2^x$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Compare to form $f(x) = a \\cdot b^x$</div>
@@ -352,7 +352,7 @@
 
 - category: "Logarithmic Functions"
   question: "What are the key inverse properties of logarithms?"
-  answer: "$\log_b(b^x) = x$ and $b^{\log_b(x)} = x$"
+  answer: "$\\log_b(b^x) = x$ and $b^{\\log_b(x)} = x$"
   example: |
     <p><strong>Example:</strong> Simplify $\\log_2(2^5)$ and $3^{\\log_3(7)}$.</p>
     <div class="step"><span class="step-label">Using inverse property:</span> $\\log_2(2^5) = 5$</div>
@@ -370,7 +370,7 @@
 
 - category: "Geometry"
   question: "What is the area of a triangle?"
-  answer: "$A = \frac{1}{2} \times \text{base} \times \text{height}$"
+  answer: "$A = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$"
   example: |
     <p><strong>Example:</strong> Find the area of a triangle with base $b = 8$ and height $h = 5$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $A = \\frac{1}{2} \\times b \\times h$</div>
@@ -379,7 +379,7 @@
 
 - category: "Geometry"
   question: "What is the area of a rectangle?"
-  answer: "$A = \text{length} \times \text{width}$"
+  answer: "$A = \\text{length} \\times \\text{width}$"
   example: |
     <p><strong>Example:</strong> Find the area of a rectangle with length $6$ and width $4$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $A = \\text{length} \\times \\text{width}$</div>
@@ -388,7 +388,7 @@
 
 - category: "Geometry"
   question: "What is the circumference of a circle?"
-  answer: "$C = 2\pi r$"
+  answer: "$C = 2\\pi r$"
   example: |
     <p><strong>Example:</strong> Find the circumference of a circle with radius $r = 5$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $C = 2\\pi r$</div>
@@ -397,7 +397,7 @@
 
 - category: "Geometry"
   question: "What is the area of a circle?"
-  answer: "$A = \pi r^2$"
+  answer: "$A = \\pi r^2$"
   example: |
     <p><strong>Example:</strong> Find the area of a circle with radius $r = 6$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $A = \\pi r^2$</div>
@@ -416,7 +416,7 @@
 
 - category: "Geometry"
   question: "What is the volume of a rectangular prism?"
-  answer: "$V = \text{length} \times \text{width} \times \text{height}$"
+  answer: "$V = \\text{length} \\times \\text{width} \\times \\text{height}$"
   example: |
     <p><strong>Example:</strong> Find the volume of a box with length $5$, width $3$, and height $4$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $V = l \\times w \\times h$</div>
@@ -425,7 +425,7 @@
 
 - category: "Geometry"
   question: "What is the volume of a cylinder?"
-  answer: "$V = \pi r^2 \times \text{height}$"
+  answer: "$V = \\pi r^2 \\times \\text{height}$"
   example: |
     <p><strong>Example:</strong> Find the volume of a cylinder with radius $r = 4$ and height $h = 10$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $V = \\pi r^2 h$</div>
@@ -434,7 +434,7 @@
 
 - category: "Geometry"
   question: "What is the distance formula?"
-  answer: "$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$"
+  answer: "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$"
   example: |
     <p><strong>Example:</strong> Find the distance between points $(2, 3)$ and $(5, 7)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify: $(x_1, y_1) = (2, 3)$, $(x_2, y_2) = (5, 7)$</div>
@@ -444,7 +444,7 @@
 
 - category: "Square Roots"
   question: "What is the principal square root?"
-  answer: "The principal square root $(\sqrt{})$ is always $\geq 0$"
+  answer: "The principal square root $(\\sqrt{})$ is always $\\geq 0$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sqrt{25}$ and explain why it's not $\\pm 5$.</p>
     <div class="step"><span class="step-label">Step 1:</span> The principal square root is the positive root: $\\sqrt{25} = 5$</div>
@@ -453,7 +453,7 @@
 
 - category: "Square Roots"
   question: "What is $\\sqrt{a^2}$ equal to?"
-  answer: "$\sqrt{a^2} = |a|$ (absolute value)"
+  answer: "$\\sqrt{a^2} = |a|$ (absolute value)"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{(-7)^2}$ and $\\sqrt{x^2}$.</p>
     <div class="step"><span class="step-label">For $\\sqrt{(-7)^2}$:</span> $\\sqrt{49} = 7 = |-7|$</div>
@@ -470,7 +470,7 @@
 
 - category: "Square Roots"
   question: "How do you simplify square roots?"
-  answer: "Factor out perfect squares. Example: $\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$"
+  answer: "Factor out perfect squares. Example: $\\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}$"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{72}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor: $\\sqrt{72} = \\sqrt{36 \\times 2}$</div>
@@ -479,7 +479,7 @@
 
 - category: "Square Roots"
   question: "Simplify $\\sqrt{50}$"
-  answer: "$\sqrt{50} = \sqrt{25 \times 2} = 5\sqrt{2}$"
+  answer: "$\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{50}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor: $\\sqrt{50} = \\sqrt{25 \\times 2}$</div>
@@ -488,7 +488,7 @@
 
 - category: "Square Roots"
   question: "Simplify $\\sqrt{200}$"
-  answer: "$\sqrt{200} = \sqrt{100 \times 2} = 10\sqrt{2}$"
+  answer: "$\\sqrt{200} = \\sqrt{100 \\times 2} = 10\\sqrt{2}$"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{200}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor: $\\sqrt{200} = \\sqrt{100 \\times 2}$</div>
@@ -497,7 +497,7 @@
 
 - category: "Square Roots"
   question: "What is the rule for $\\sqrt{a \\times b}$?"
-  answer: "$\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$ (only when $a, b \geq 0$)"
+  answer: "$\\sqrt{a \\times b} = \\sqrt{a} \\times \\sqrt{b}$ (only when $a, b \\geq 0$)"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{12}$ using the product rule.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor: $\\sqrt{12} = \\sqrt{4 \\times 3}$</div>
@@ -506,7 +506,7 @@
 
 - category: "Square Roots"
   question: "What is the rule for $\\sqrt{\\frac{a}{b}}$?"
-  answer: "$\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$ (when $b \neq 0$ and $a, b \geq 0$)"
+  answer: "$\\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}$ (when $b \\neq 0$ and $a, b \\geq 0$)"
   example: |
     <p><strong>Example:</strong> Simplify $\\sqrt{\\frac{49}{16}}$ using the quotient rule.</p>
     <div class="step"><span class="step-label">Step 1:</span> Apply rule: $\\sqrt{\\frac{49}{16}} = \\frac{\\sqrt{49}}{\\sqrt{16}}$</div>
@@ -536,7 +536,7 @@
 
 - category: "Square Roots"
   question: "What types of square root questions appear on the TSI?"
-  answer: "Simplify $\sqrt{\text{expression}}$, solve $\sqrt{\text{linear}} = \text{number}$, solve $\sqrt{\text{linear}} = \text{linear}$ (check solutions), find domain of $f(x) = \sqrt{\text{quadratic or linear}}$, evaluate $f(\text{perfect square})$"
+  answer: "Simplify $\\sqrt{\\text{expression}}$, solve $\\sqrt{\\text{linear}} = \\text{number}$, solve $\\sqrt{\\text{linear}} = \\text{linear}$ (check solutions), find domain of $f(x) = \\sqrt{\\text{quadratic or linear}}$, evaluate $f(\\text{perfect square})$"
   example: |
     <p><strong>Example:</strong> Find the domain of $f(x) = \\sqrt{x^2 - 9}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Inside must be $\\geq 0$: $x^2 - 9 \\geq 0$</div>
@@ -546,7 +546,7 @@
 
 - category: "Rational Expressions"
   question: "What is a rational expression?"
-  answer: "A rational expression is a fraction with polynomials in numerator and/or denominator. Example: $\frac{x^2 - 4}{x + 3}$ or $\frac{5}{x - 2}$"
+  answer: "A rational expression is a fraction with polynomials in numerator and/or denominator. Example: $\\frac{x^2 - 4}{x + 3}$ or $\\frac{5}{x - 2}$"
   example: |
     <p><strong>Example:</strong> Identify which are rational expressions: $\\frac{x^2 - 4}{x + 3}$, $\\frac{5}{x - 2}$, $x^2 + 3x - 1$.</p>
     <div class="step"><span class="step-label">Rational expressions:</span> $\\frac{x^2 - 4}{x + 3}$ ✓ (polynomial/polynomial), $\\frac{5}{x - 2}$ ✓ (constant/polynomial)</div>
@@ -555,7 +555,7 @@
 
 - category: "Rational Expressions"
   question: "How do you find the domain of a rational expression?"
-  answer: "Denominator $\neq 0$ → exclude values that make denominator zero. Example: For $\frac{x + 1}{x - 5}$, domain is all real numbers except $x \neq 5$"
+  answer: "Denominator $\\neq 0$ → exclude values that make denominator zero. Example: For $\\frac{x + 1}{x - 5}$, domain is all real numbers except $x \\neq 5$"
   example: |
     <p><strong>Example:</strong> Find the domain of $f(x) = \\frac{x + 1}{x - 5}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Set denominator $= 0$: $x - 5 = 0$ → $x = 5$</div>
@@ -574,7 +574,7 @@
 
 - category: "Rational Expressions"
   question: "How do you multiply rational expressions?"
-  answer: "$\frac{\text{num}_1 \times \text{num}_2}{\text{den}_1 \times \text{den}_2}$ → simplify"
+  answer: "$\\frac{\\text{num}_1 \\times \\text{num}_2}{\\text{den}_1 \\times \\text{den}_2}$ → simplify"
   example: |
     <p><strong>Example:</strong> Multiply $\\frac{x + 2}{x - 1} \\times \\frac{x - 1}{x + 3}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Multiply numerators and denominators: $\\frac{(x + 2)(x - 1)}{(x - 1)(x + 3)}$</div>
@@ -613,7 +613,7 @@
 
 - category: "Rational Expressions"
   question: "Simplify $\\frac{x^2 - 25}{x^2 - 10x + 25}$"
-  answer: "$\frac{x^2 - 25}{x^2 - 10x + 25} = \frac{(x + 5)(x - 5)}{(x - 5)^2} = \frac{x + 5}{x - 5}$"
+  answer: "$\\frac{x^2 - 25}{x^2 - 10x + 25} = \\frac{(x + 5)(x - 5)}{(x - 5)^2} = \\frac{x + 5}{x - 5}$"
   example: |
     <p><strong>Example:</strong> Simplify $\\frac{x^2 - 25}{x^2 - 10x + 25}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor numerator: $x^2 - 25 = (x + 5)(x - 5)$</div>
@@ -623,7 +623,7 @@
 
 - category: "Rational Expressions"
   question: "Add $\\frac{2}{x + 3} + \\frac{5}{x}$"
-  answer: "$\frac{2}{x + 3} + \frac{5}{x} = \frac{2x + 15}{x(x + 3)}$"
+  answer: "$\\frac{2}{x + 3} + \\frac{5}{x} = \\frac{2x + 15}{x(x + 3)}$"
   example: |
     <p><strong>Example:</strong> Add $\\frac{2}{x + 3} + \\frac{5}{x}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> LCD: $x(x + 3)$</div>
@@ -644,7 +644,7 @@
 
 - category: "Rational Expressions"
   question: "Find the domain of $f(x) = \\frac{x - 2}{x^2 - 4}$"
-  answer: "$x \neq \pm 2$"
+  answer: "$x \\neq \\pm 2$"
   example: |
     <p><strong>Example:</strong> Find the domain of $f(x) = \\frac{x - 2}{x^2 - 4}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Factor denominator: $x^2 - 4 = (x - 2)(x + 2)$</div>
@@ -654,7 +654,7 @@
 
 - category: "Rational Expressions"
   question: "Solve $\\frac{2}{x} = \\frac{5}{x - 3}$"
-  answer: "$x = \frac{6}{7}$ (check: valid)"
+  answer: "$x = \\frac{6}{7}$ (check: valid)"
   example: |
     <p><strong>Example:</strong> Solve $\\frac{2}{x} = \\frac{5}{x - 3}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Cross multiply: $2(x - 3) = 5x$</div>
@@ -665,7 +665,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the formula for probability of an event?"
-  answer: "$P(\text{event}) = \frac{\text{favorable outcomes}}{\text{total possible outcomes}}$ where $0 \leq P \leq 1$"
+  answer: "$P(\\text{event}) = \\frac{\\text{favorable outcomes}}{\\text{total possible outcomes}}$ where $0 \\leq P \\leq 1$"
   example: |
     <p><strong>Example:</strong> A bag contains 5 red and 3 blue marbles. What is $P(\\text{red})$?</p>
     <div class="step"><span class="step-label">Step 1:</span> Total marbles: $5 + 3 = 8$</div>
@@ -675,7 +675,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the complement rule for probability?"
-  answer: "$P(\text{not event}) = 1 - P(\text{event})$"
+  answer: "$P(\\text{not event}) = 1 - P(\\text{event})$"
   example: |
     <p><strong>Example:</strong> If $P(\\text{red}) = \\frac{3}{8}$, what is $P(\\text{not red})$?</p>
     <div class="step"><span class="step-label">Step 1:</span> Use complement rule: $P(\\text{not red}) = 1 - P(\\text{red})$</div>
@@ -684,7 +684,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the probability of independent events ('and')?"
-  answer: "$P(A \text{ and } B) = P(A) \times P(B)$"
+  answer: "$P(A \\text{ and } B) = P(A) \\times P(B)$"
   example: |
     <p><strong>Example:</strong> Flip two coins. What is $P(\\text{both heads})$?</p>
     <div class="step"><span class="step-label">Step 1:</span> $P(\\text{head on first}) = \\frac{1}{2}$, $P(\\text{head on second}) = \\frac{1}{2}$</div>
@@ -693,7 +693,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the probability of mutually exclusive events ('or')?"
-  answer: "$P(A \text{ or } B) = P(A) + P(B)$"
+  answer: "$P(A \\text{ or } B) = P(A) + P(B)$"
   example: |
     <p><strong>Example:</strong> Roll a die. What is $P(\\text{roll 2 or 5})$?</p>
     <div class="step"><span class="step-label">Step 1:</span> $P(2) = \\frac{1}{6}$, $P(5) = \\frac{1}{6}$</div>
@@ -702,7 +702,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the probability of non-mutually exclusive events ('or')?"
-  answer: "$P(A \text{ or } B) = P(A) + P(B) - P(A \text{ and } B)$"
+  answer: "$P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)$"
   example: |
     <p><strong>Example:</strong> In a deck of cards, what is $P(\\text{heart or king})$?</p>
     <div class="step"><span class="step-label">Step 1:</span> $P(\\text{heart}) = \\frac{13}{52}$, $P(\\text{king}) = \\frac{4}{52}$, $P(\\text{heart and king}) = \\frac{1}{52}$</div>
@@ -758,7 +758,7 @@
 
 - category: "Probability & Statistics"
   question: "If $P(\\text{red}) = \\frac{3}{8}$, what is $P(\\text{not red})$?"
-  answer: "$P(\text{not red}) = \frac{5}{8}$"
+  answer: "$P(\\text{not red}) = \\frac{5}{8}$"
   example: |
     <p><strong>Example:</strong> If $P(\\text{red}) = \\frac{3}{8}$, find $P(\\text{not red})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use complement rule: $P(\\text{not red}) = 1 - P(\\text{red})$</div>
@@ -767,7 +767,7 @@
 
 - category: "Probability & Statistics"
   question: "What is the probability of rolling a sum of 7 with two dice?"
-  answer: "$P = \frac{6}{36} = \frac{1}{6}$"
+  answer: "$P = \\frac{6}{36} = \\frac{1}{6}$"
   example: |
     <p><strong>Example:</strong> Two dice are rolled. What is $P(\\text{sum} = 7)$?</p>
     <div class="step"><span class="step-label">Step 1:</span> Total outcomes: $6 \\times 6 = 36$</div>
@@ -777,7 +777,7 @@
 
 - category: "Probability & Statistics"
   question: "A bag has 5 red and 3 blue marbles. If you draw two without replacement, what is $P(\\text{both red})$?"
-  answer: "$P(\text{both red}) = \frac{5}{8} \times \frac{4}{7} = \frac{5}{14}$"
+  answer: "$P(\\text{both red}) = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{5}{14}$"
   example: |
     <p><strong>Example:</strong> A bag has 5 red and 3 blue marbles. Draw two without replacement. Find $P(\\text{both red})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $P(\\text{first red}) = \\frac{5}{8}$</div>
@@ -787,7 +787,7 @@
 
 - category: "Probability & Statistics"
   question: "If $P(A) = 0.4$, $P(B) = 0.3$, and they are mutually exclusive, what is $P(A \\text{ or } B)$?"
-  answer: "$P(A \text{ or } B) = 0.7$"
+  answer: "$P(A \\text{ or } B) = 0.7$"
   example: |
     <p><strong>Example:</strong> If $P(A) = 0.4$, $P(B) = 0.3$, and they are mutually exclusive, find $P(A \\text{ or } B)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Since mutually exclusive, $P(A \\text{ and } B) = 0$</div>
@@ -806,7 +806,7 @@
 
 - category: "Trigonometry"
   question: "How do you define sine in a right triangle?"
-  answer: "$\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}}$"
+  answer: "$\\sin(\\theta) = \\frac{\\text{opposite}}{\\text{hypotenuse}}$"
   example: |
     <p><strong>Example:</strong> In a right triangle, the side opposite angle $\\theta$ is $6$ and the hypotenuse is $10$. Find $\\sin(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify: opposite = $6$, hypotenuse = $10$</div>
@@ -815,7 +815,7 @@
 
 - category: "Trigonometry"
   question: "How do you define cosine in a right triangle?"
-  answer: "$\cos(\theta) = \frac{\text{adjacent}}{\text{hypotenuse}}$"
+  answer: "$\\cos(\\theta) = \\frac{\\text{adjacent}}{\\text{hypotenuse}}$"
   example: |
     <p><strong>Example:</strong> In a right triangle, the side adjacent to angle $\\theta$ is $8$ and the hypotenuse is $10$. Find $\\cos(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify: adjacent = $8$, hypotenuse = $10$</div>
@@ -824,7 +824,7 @@
 
 - category: "Trigonometry"
   question: "How do you define tangent in a right triangle?"
-  answer: "$\tan(\theta) = \frac{\text{opposite}}{\text{adjacent}}$"
+  answer: "$\\tan(\\theta) = \\frac{\\text{opposite}}{\\text{adjacent}}$"
   example: |
     <p><strong>Example:</strong> In a right triangle, the side opposite angle $\\theta$ is $6$ and the adjacent side is $8$. Find $\\tan(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Identify: opposite = $6$, adjacent = $8$</div>
@@ -833,7 +833,7 @@
 
 - category: "Trigonometry"
   question: "What is the reciprocal of sine?"
-  answer: "Cosecant: $\csc(\theta) = \frac{1}{\sin(\theta)}$"
+  answer: "Cosecant: $\\csc(\\theta) = \\frac{1}{\\sin(\\theta)}$"
   example: |
     <p><strong>Example:</strong> If $\\sin(\\theta) = \\frac{3}{5}$, find $\\csc(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\csc(\\theta) = \\frac{1}{\\sin(\\theta)}$</div>
@@ -842,7 +842,7 @@
 
 - category: "Trigonometry"
   question: "What is the reciprocal of cosine?"
-  answer: "Secant: $\sec(\theta) = \frac{1}{\cos(\theta)}$"
+  answer: "Secant: $\\sec(\\theta) = \\frac{1}{\\cos(\\theta)}$"
   example: |
     <p><strong>Example:</strong> If $\\cos(\\theta) = \\frac{4}{5}$, find $\\sec(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\sec(\\theta) = \\frac{1}{\\cos(\\theta)}$</div>
@@ -851,7 +851,7 @@
 
 - category: "Trigonometry"
   question: "What is the reciprocal of tangent?"
-  answer: "Cotangent: $\cot(\theta) = \frac{1}{\tan(\theta)} = \frac{\cos(\theta)}{\sin(\theta)}$"
+  answer: "Cotangent: $\\cot(\\theta) = \\frac{1}{\\tan(\\theta)} = \\frac{\\cos(\\theta)}{\\sin(\\theta)}$"
   example: |
     <p><strong>Example:</strong> If $\\tan(\\theta) = \\frac{3}{4}$, find $\\cot(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\cot(\\theta) = \\frac{1}{\\tan(\\theta)}$</div>
@@ -860,7 +860,7 @@
 
 - category: "Trigonometry"
   question: "What is the quotient identity for tangent?"
-  answer: "$\tan(\theta) = \frac{\sin(\theta)}{\cos(\theta)}$"
+  answer: "$\\tan(\\theta) = \\frac{\\sin(\\theta)}{\\cos(\\theta)}$"
   example: |
     <p><strong>Example:</strong> If $\\sin(\\theta) = \\frac{3}{5}$ and $\\cos(\\theta) = \\frac{4}{5}$, find $\\tan(\\theta)$ using the quotient identity.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use identity: $\\tan(\\theta) = \\frac{\\sin(\\theta)}{\\cos(\\theta)}$</div>
@@ -869,7 +869,7 @@
 
 - category: "Trigonometry"
   question: "What are the co-function relationships?"
-  answer: "$\sin(\theta) = \cos(90° - \theta)$, $\cos(\theta) = \sin(90° - \theta)$, $\tan(\theta) = \cot(90° - \theta)$"
+  answer: "$\\sin(\\theta) = \\cos(90° - \\theta)$, $\\cos(\\theta) = \\sin(90° - \\theta)$, $\\tan(\\theta) = \\cot(90° - \\theta)$"
   example: |
     <p><strong>Example:</strong> Use co-function relationships to find $\\sin(60°)$ if you know $\\cos(30°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\sin(\\theta) = \\cos(90° - \\theta)$</div>
@@ -878,7 +878,7 @@
 
 - category: "Trigonometry"
   question: "What are the common trigonometric values for special angles?"
-  answer: "<table style='width:100%; border-collapse: collapse; margin: 10px 0;'><thead><tr style='background: #667eea; color: white;'><th style='padding: 8px; border: 1px solid #ddd;'>Angle (deg)</th><th style='padding: 8px; border: 1px solid #ddd;'>Angle (rad)</th><th style='padding: 8px; border: 1px solid #ddd;'>sin</th><th style='padding: 8px; border: 1px solid #ddd;'>cos</th><th style='padding: 8px; border: 1px solid #ddd;'>tan</th></tr></thead><tbody><tr><td style='padding: 8px; border: 1px solid #ddd;'>0°</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>30°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\pi/6$</td><td style='padding: 8px; border: 1px solid #ddd;'>$1/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{3}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{3}/3$</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>45°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\pi/4$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{2}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{2}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>60°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\pi/3$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{3}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$1/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\sqrt{3}$</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>90°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\pi/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>$\infty$</td></tr></tbody></table>"
+  answer: "<table style='width:100%; border-collapse: collapse; margin: 10px 0;'><thead><tr style='background: #667eea; color: white;'><th style='padding: 8px; border: 1px solid #ddd;'>Angle (deg)</th><th style='padding: 8px; border: 1px solid #ddd;'>Angle (rad)</th><th style='padding: 8px; border: 1px solid #ddd;'>sin</th><th style='padding: 8px; border: 1px solid #ddd;'>cos</th><th style='padding: 8px; border: 1px solid #ddd;'>tan</th></tr></thead><tbody><tr><td style='padding: 8px; border: 1px solid #ddd;'>0°</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>30°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\pi/6$</td><td style='padding: 8px; border: 1px solid #ddd;'>$1/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{3}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{3}/3$</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>45°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\pi/4$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{2}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{2}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>60°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\pi/3$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{3}/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$1/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\sqrt{3}$</td></tr><tr><td style='padding: 8px; border: 1px solid #ddd;'>90°</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\pi/2$</td><td style='padding: 8px; border: 1px solid #ddd;'>1</td><td style='padding: 8px; border: 1px solid #ddd;'>0</td><td style='padding: 8px; border: 1px solid #ddd;'>$\\infty$</td></tr></tbody></table>"
   example: |
     <p><strong>Example:</strong> Use the table to find $\\sin(60°)$, $\\cos(45°)$, and $\\tan(30°)$.</p>
     <div class="step"><span class="step-label">From the table:</span> $\\sin(60°) = \\frac{\\sqrt{3}}{2}$</div>
@@ -888,7 +888,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(0°)$ or $\\sin(0)$?"
-  answer: "$\sin(0) = 0$"
+  answer: "$\\sin(0) = 0$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(0)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, angle $0$ corresponds to point $(1, 0)$</div>
@@ -897,7 +897,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(0°)$ or $\\cos(0)$?"
-  answer: "$\cos(0) = 1$"
+  answer: "$\\cos(0) = 1$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(0)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, angle $0$ corresponds to point $(1, 0)$</div>
@@ -906,7 +906,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(30°)$ or $\\sin(\\pi/6)$?"
-  answer: "$\sin(\pi/6) = \frac{1}{2}$"
+  answer: "$\\sin(\\pi/6) = \\frac{1}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(\\pi/6)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/6$ (30°) corresponds to point $(\\frac{\\sqrt{3}}{2}, \\frac{1}{2})$</div>
@@ -915,7 +915,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(30°)$ or $\\cos(\\pi/6)$?"
-  answer: "$\cos(\pi/6) = \frac{\sqrt{3}}{2}$"
+  answer: "$\\cos(\\pi/6) = \\frac{\\sqrt{3}}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(\\pi/6)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/6$ (30°) corresponds to point $(\\frac{\\sqrt{3}}{2}, \\frac{1}{2})$</div>
@@ -924,7 +924,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(45°)$ or $\\sin(\\pi/4)$?"
-  answer: "$\sin(\pi/4) = \frac{\sqrt{2}}{2}$"
+  answer: "$\\sin(\\pi/4) = \\frac{\\sqrt{2}}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(\\pi/4)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/4$ (45°) corresponds to point $(\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2})$</div>
@@ -933,7 +933,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(45°)$ or $\\cos(\\pi/4)$?"
-  answer: "$\cos(\pi/4) = \frac{\sqrt{2}}{2}$"
+  answer: "$\\cos(\\pi/4) = \\frac{\\sqrt{2}}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(\\pi/4)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/4$ (45°) corresponds to point $(\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2})$</div>
@@ -942,7 +942,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\tan(45°)$ or $\\tan(\\pi/4)$?"
-  answer: "$\tan(\pi/4) = 1$"
+  answer: "$\\tan(\\pi/4) = 1$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\tan(\\pi/4)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\tan(\\pi/4) = \\frac{\\sin(\\pi/4)}{\\cos(\\pi/4)} = \\frac{\\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2}}$</div>
@@ -951,7 +951,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(60°)$ or $\\sin(\\pi/3)$?"
-  answer: "$\sin(\pi/3) = \frac{\sqrt{3}}{2}$"
+  answer: "$\\sin(\\pi/3) = \\frac{\\sqrt{3}}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(\\pi/3)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/3$ (60°) corresponds to point $(\\frac{1}{2}, \\frac{\\sqrt{3}}{2})$</div>
@@ -960,7 +960,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(60°)$ or $\\cos(\\pi/3)$?"
-  answer: "$\cos(\pi/3) = \frac{1}{2}$"
+  answer: "$\\cos(\\pi/3) = \\frac{1}{2}$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(\\pi/3)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/3$ (60°) corresponds to point $(\\frac{1}{2}, \\frac{\\sqrt{3}}{2})$</div>
@@ -969,7 +969,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(90°)$ or $\\sin(\\pi/2)$?"
-  answer: "$\sin(\pi/2) = 1$"
+  answer: "$\\sin(\\pi/2) = 1$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(\\pi/2)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/2$ (90°) corresponds to point $(0, 1)$</div>
@@ -978,7 +978,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(90°)$ or $\\cos(\\pi/2)$?"
-  answer: "$\cos(\pi/2) = 0$"
+  answer: "$\\cos(\\pi/2) = 0$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(\\pi/2)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi/2$ (90°) corresponds to point $(0, 1)$</div>
@@ -987,7 +987,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(\\pi)$?"
-  answer: "$\sin(\pi) = 0$"
+  answer: "$\\sin(\\pi) = 0$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(\\pi)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi$ (180°) corresponds to point $(-1, 0)$</div>
@@ -996,7 +996,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(\\pi)$?"
-  answer: "$\cos(\pi) = -1$"
+  answer: "$\\cos(\\pi) = -1$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(\\pi)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $\\pi$ (180°) corresponds to point $(-1, 0)$</div>
@@ -1005,7 +1005,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(3\\pi/2)$?"
-  answer: "$\sin(3\pi/2) = -1$"
+  answer: "$\\sin(3\\pi/2) = -1$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(3\\pi/2)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $3\\pi/2$ (270°) corresponds to point $(0, -1)$</div>
@@ -1014,7 +1014,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(3\\pi/2)$?"
-  answer: "$\cos(3\pi/2) = 0$"
+  answer: "$\\cos(3\\pi/2) = 0$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\cos(3\\pi/2)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> On the unit circle, $3\\pi/2$ (270°) corresponds to point $(0, -1)$</div>
@@ -1033,7 +1033,7 @@
 
 - category: "Trigonometry"
   question: "In which quadrant are both sine and cosine positive?"
-  answer: "Quadrant I (0° to 90° or 0 to $\pi/2$)"
+  answer: "Quadrant I (0° to 90° or 0 to $\\pi/2$)"
   example: |
     <p><strong>Example:</strong> Is $\\theta = 45°$ in a quadrant where both sine and cosine are positive?</p>
     <div class="step"><span class="step-label">Step 1:</span> $45°$ is in Quadrant I (0° to 90°)</div>
@@ -1042,7 +1042,7 @@
 
 - category: "Trigonometry"
   question: "In which quadrant is sine positive but cosine negative?"
-  answer: "Quadrant II (90° to 180° or $\pi/2$ to $\pi$)"
+  answer: "Quadrant II (90° to 180° or $\\pi/2$ to $\\pi$)"
   example: |
     <p><strong>Example:</strong> Determine the quadrant of angle $\\theta = 120°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $120°$ is between $90°$ and $180°$</div>
@@ -1051,7 +1051,7 @@
 
 - category: "Trigonometry"
   question: "In which quadrant are both sine and cosine negative?"
-  answer: "Quadrant III (180° to 270° or $\pi$ to $3\pi/2$)"
+  answer: "Quadrant III (180° to 270° or $\\pi$ to $3\\pi/2$)"
   example: |
     <p><strong>Example:</strong> Determine the quadrant of angle $\\theta = 225°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $225°$ is between $180°$ and $270°$</div>
@@ -1060,7 +1060,7 @@
 
 - category: "Trigonometry"
   question: "In which quadrant is cosine positive but sine negative?"
-  answer: "Quadrant IV (270° to 360° or $3\pi/2$ to $2\pi$)"
+  answer: "Quadrant IV (270° to 360° or $3\\pi/2$ to $2\\pi$)"
   example: |
     <p><strong>Example:</strong> Determine the quadrant of angle $\\theta = 315°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $315°$ is between $270°$ and $360°$</div>
@@ -1069,7 +1069,7 @@
 
 - category: "Trigonometry"
   question: "What is a reference angle?"
-  answer: "The acute angle formed by the terminal side of an angle and the x-axis. Always between 0° and 90° (or 0 and $\pi/2$)"
+  answer: "The acute angle formed by the terminal side of an angle and the x-axis. Always between 0° and 90° (or 0 and $\\pi/2$)"
   example: |
     <p><strong>Example:</strong> Find the reference angle for $\\theta = 150°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $150°$ is in Quadrant II</div>
@@ -1078,7 +1078,7 @@
 
 - category: "Trigonometry"
   question: "What is the fundamental Pythagorean identity?"
-  answer: "$\sin^2(\theta) + \cos^2(\theta) = 1$"
+  answer: "$\\sin^2(\\theta) + \\cos^2(\\theta) = 1$"
   example: |
     <p><strong>Example:</strong> Verify the identity for $\\theta = \\pi/4$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\sin^2(\\pi/4) + \\cos^2(\\pi/4) = (\\frac{\\sqrt{2}}{2})^2 + (\\frac{\\sqrt{2}}{2})^2$</div>
@@ -1087,7 +1087,7 @@
 
 - category: "Trigonometry"
   question: "What is the Pythagorean identity involving tangent and secant?"
-  answer: "$\tan^2(\theta) + 1 = \sec^2(\theta)$"
+  answer: "$\\tan^2(\\theta) + 1 = \\sec^2(\\theta)$"
   example: |
     <p><strong>Example:</strong> If $\\tan(\\theta) = 3$, find $\\sec(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use identity: $\\tan^2(\\theta) + 1 = \\sec^2(\\theta)$</div>
@@ -1097,7 +1097,7 @@
 
 - category: "Trigonometry"
   question: "What is the Pythagorean identity involving cotangent and cosecant?"
-  answer: "$\cot^2(\theta) + 1 = \csc^2(\theta)$"
+  answer: "$\\cot^2(\\theta) + 1 = \\csc^2(\\theta)$"
   example: |
     <p><strong>Example:</strong> If $\\cot(\\theta) = 4$, find $\\csc(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use identity: $\\cot^2(\\theta) + 1 = \\csc^2(\\theta)$</div>
@@ -1107,7 +1107,7 @@
 
 - category: "Trigonometry"
   question: "What is the sum formula for sine?"
-  answer: "$\sin(A + B) = \sin(A)\cos(B) + \cos(A)\sin(B)$"
+  answer: "$\\sin(A + B) = \\sin(A)\\cos(B) + \\cos(A)\\sin(B)$"
   example: |
     <p><strong>Example:</strong> Find $\\sin(75°)$ using the sum formula, given $\\sin(45°) = \\frac{\\sqrt{2}}{2}$ and $\\cos(30°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $75° = 45° + 30°$, so $\\sin(75°) = \\sin(45° + 30°)$</div>
@@ -1117,7 +1117,7 @@
 
 - category: "Trigonometry"
   question: "What is the difference formula for sine?"
-  answer: "$\sin(A - B) = \sin(A)\cos(B) - \cos(A)\sin(B)$"
+  answer: "$\\sin(A - B) = \\sin(A)\\cos(B) - \\cos(A)\\sin(B)$"
   example: |
     <p><strong>Example:</strong> Find $\\sin(15°)$ using $15° = 45° - 30°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\sin(15°) = \\sin(45° - 30°)$</div>
@@ -1127,7 +1127,7 @@
 
 - category: "Trigonometry"
   question: "What is the sum formula for cosine?"
-  answer: "$\cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)$"
+  answer: "$\\cos(A + B) = \\cos(A)\\cos(B) - \\sin(A)\\sin(B)$"
   example: |
     <p><strong>Example:</strong> Find $\\cos(75°)$ using $75° = 45° + 30°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\cos(75°) = \\cos(45° + 30°)$</div>
@@ -1137,7 +1137,7 @@
 
 - category: "Trigonometry"
   question: "What is the difference formula for cosine?"
-  answer: "$\cos(A - B) = \cos(A)\cos(B) + \sin(A)\sin(B)$"
+  answer: "$\\cos(A - B) = \\cos(A)\\cos(B) + \\sin(A)\\sin(B)$"
   example: |
     <p><strong>Example:</strong> Find $\\cos(15°)$ using $15° = 45° - 30°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\cos(15°) = \\cos(45° - 30°)$</div>
@@ -1147,7 +1147,7 @@
 
 - category: "Trigonometry"
   question: "What is the sum formula for tangent?"
-  answer: "$\tan(A + B) = \frac{\tan(A) + \tan(B)}{1 - \tan(A)\tan(B)}$"
+  answer: "$\\tan(A + B) = \\frac{\\tan(A) + \\tan(B)}{1 - \\tan(A)\\tan(B)}$"
   example: |
     <p><strong>Example:</strong> Find $\\tan(75°)$ using $75° = 45° + 30°$, given $\\tan(45°) = 1$ and $\\tan(30°) = \\frac{1}{\\sqrt{3}}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\tan(75°) = \\tan(45° + 30°)$</div>
@@ -1157,7 +1157,7 @@
 
 - category: "Trigonometry"
   question: "What is the double angle formula for sine?"
-  answer: "$\sin(2\theta) = 2\sin(\theta)\cos(\theta)$"
+  answer: "$\\sin(2\\theta) = 2\\sin(\\theta)\\cos(\\theta)$"
   example: |
     <p><strong>Example:</strong> If $\\sin(\\theta) = \\frac{3}{5}$ and $\\cos(\\theta) = \\frac{4}{5}$, find $\\sin(2\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $\\sin(2\\theta) = 2\\sin(\\theta)\\cos(\\theta)$</div>
@@ -1166,7 +1166,7 @@
 
 - category: "Trigonometry"
   question: "What is the double angle formula for cosine?"
-  answer: "$\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta) = 2\cos^2(\theta) - 1 = 1 - 2\sin^2(\theta)$"
+  answer: "$\\cos(2\\theta) = \\cos^2(\\theta) - \\sin^2(\\theta) = 2\\cos^2(\\theta) - 1 = 1 - 2\\sin^2(\\theta)$"
   example: |
     <p><strong>Example:</strong> If $\\cos(\\theta) = \\frac{4}{5}$, find $\\cos(2\\theta)$ using the double angle formula.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $\\cos(2\\theta) = 2\\cos^2(\\theta) - 1$</div>
@@ -1175,7 +1175,7 @@
 
 - category: "Trigonometry"
   question: "What is the double angle formula for tangent?"
-  answer: "$\tan(2\theta) = \frac{2\tan(\theta)}{1 - \tan^2(\theta)}$"
+  answer: "$\\tan(2\\theta) = \\frac{2\\tan(\\theta)}{1 - \\tan^2(\\theta)}$"
   example: |
     <p><strong>Example:</strong> If $\\tan(\\theta) = \\frac{3}{4}$, find $\\tan(2\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $\\tan(2\\theta) = \\frac{2\\tan(\\theta)}{1 - \\tan^2(\\theta)}$</div>
@@ -1184,7 +1184,7 @@
 
 - category: "Trigonometry"
   question: "What is the half angle formula for sine?"
-  answer: "$\sin\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 - \cos(\theta)}{2}}$"
+  answer: "$\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1 - \\cos(\\theta)}{2}}$"
   example: |
     <p><strong>Example:</strong> Find $\\sin(15°)$ using the half angle formula, given $\\cos(30°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $15° = \\frac{30°}{2}$, so $\\sin(15°) = \\sin(\\frac{30°}{2})$</div>
@@ -1194,7 +1194,7 @@
 
 - category: "Trigonometry"
   question: "What is the half angle formula for cosine?"
-  answer: "$\cos\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 + \cos(\theta)}{2}}$"
+  answer: "$\\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1 + \\cos(\\theta)}{2}}$"
   example: |
     <p><strong>Example:</strong> Find $\\cos(15°)$ using the half angle formula, given $\\cos(30°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $\\cos(15°) = \\cos(\\frac{30°}{2})$</div>
@@ -1204,7 +1204,7 @@
 
 - category: "Trigonometry"
   question: "What are the even/odd identities?"
-  answer: "$\sin(-\theta) = -\sin(\theta)$ (odd), $\cos(-\theta) = \cos(\theta)$ (even), $\tan(-\theta) = -\tan(\theta)$ (odd)"
+  answer: "$\\sin(-\\theta) = -\\sin(\\theta)$ (odd), $\\cos(-\\theta) = \\cos(\\theta)$ (even), $\\tan(-\\theta) = -\\tan(\\theta)$ (odd)"
   example: |
     <p><strong>Example:</strong> Evaluate $\\sin(-30°)$, $\\cos(-45°)$, and $\\tan(-60°)$.</p>
     <div class="step"><span class="step-label">Using identities:</span> $\\sin(-30°) = -\\sin(30°) = -\\frac{1}{2}$</div>
@@ -1214,7 +1214,7 @@
 
 - category: "Trigonometry"
   question: "What is the period of $y = \\sin(x)$?"
-  answer: "Period = $2\pi$"
+  answer: "Period = $2\\pi$"
   example: |
     <p><strong>Example:</strong> How long does it take for $y = \\sin(x)$ to complete one full cycle?</p>
     <div class="step"><span class="step-label">Step 1:</span> The sine function repeats every $2\\pi$ radians</div>
@@ -1223,7 +1223,7 @@
 
 - category: "Trigonometry"
   question: "What is the period of $y = \\cos(x)$?"
-  answer: "Period = $2\pi$"
+  answer: "Period = $2\\pi$"
   example: |
     <p><strong>Example:</strong> What is the period of $y = \\cos(x)$?</p>
     <div class="step"><span class="step-label">Step 1:</span> The cosine function repeats every $2\\pi$ radians</div>
@@ -1232,7 +1232,7 @@
 
 - category: "Trigonometry"
   question: "What is the period of $y = \\tan(x)$?"
-  answer: "Period = $\pi$"
+  answer: "Period = $\\pi$"
   example: |
     <p><strong>Example:</strong> What is the period of $y = \\tan(x)$?</p>
     <div class="step"><span class="step-label">Step 1:</span> The tangent function repeats every $\\pi$ radians</div>
@@ -1241,7 +1241,7 @@
 
 - category: "Trigonometry"
   question: "What is the period of $y = \\sec(x)$ and $y = \\csc(x)$?"
-  answer: "Period = $2\pi$"
+  answer: "Period = $2\\pi$"
   example: |
     <p><strong>Example:</strong> What is the period of $y = \\sec(x)$?</p>
     <div class="step"><span class="step-label">Step 1:</span> Since $\\sec(x) = \\frac{1}{\\cos(x)}$, it has the same period as cosine</div>
@@ -1250,7 +1250,7 @@
 
 - category: "Trigonometry"
   question: "What is the period of $y = \\cot(x)$?"
-  answer: "Period = $\pi$"
+  answer: "Period = $\\pi$"
   example: |
     <p><strong>Example:</strong> What is the period of $y = \\cot(x)$?</p>
     <div class="step"><span class="step-label">Step 1:</span> Since $\\cot(x) = \\frac{1}{\\tan(x)}$, it has the same period as tangent</div>
@@ -1277,7 +1277,7 @@
 
 - category: "Trigonometry"
   question: "For $y = A\\sin(Bx + C) + D$, what does $B$ represent?"
-  answer: "$B$ affects the period: Period = $\frac{2\pi}{B}$"
+  answer: "$B$ affects the period: Period = $\\frac{2\\pi}{B}$"
   example: |
     <p><strong>Example:</strong> Find the period of $y = \\sin(3x)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Compare to form: $B = 3$</div>
@@ -1322,7 +1322,7 @@
 
 - category: "Trigonometry"
   question: "What is the range of $y = \\tan(x)$?"
-  answer: "Range: $(-\infty, \infty)$ or all real numbers"
+  answer: "Range: $(-\\infty, \\infty)$ or all real numbers"
   example: |
     <p><strong>Example:</strong> What values can $y = \\tan(x)$ take?</p>
     <div class="step"><span class="step-label">Step 1:</span> The tangent function can take any real value</div>
@@ -1340,7 +1340,7 @@
 
 - category: "Trigonometry"
   question: "What is the range of $y = \\arcsin(x)$ or $\\sin^{-1}(x)$?"
-  answer: "Range: $[-\pi/2, \pi/2]$ or $[-90°, 90°]$"
+  answer: "Range: $[-\\pi/2, \\pi/2]$ or $[-90°, 90°]$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arcsin(\\frac{1}{2})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Ask: "What angle has sine = $\\frac{1}{2}$?"</div>
@@ -1358,7 +1358,7 @@
 
 - category: "Trigonometry"
   question: "What is the range of $y = \\arccos(x)$ or $\\cos^{-1}(x)$?"
-  answer: "Range: $[0, \pi]$ or $[0°, 180°]$"
+  answer: "Range: $[0, \\pi]$ or $[0°, 180°]$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arccos(\\frac{\\sqrt{2}}{2})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Ask: "What angle has cosine = $\\frac{\\sqrt{2}}{2}$?"</div>
@@ -1367,7 +1367,7 @@
 
 - category: "Trigonometry"
   question: "What is the domain of $y = \\arctan(x)$ or $\\tan^{-1}(x)$?"
-  answer: "Domain: $(-\infty, \infty)$ or all real numbers"
+  answer: "Domain: $(-\\infty, \\infty)$ or all real numbers"
   example: |
     <p><strong>Example:</strong> Why is the domain of $\\arctan(x)$ all real numbers?</p>
     <div class="step"><span class="step-label">Step 1:</span> Since $\\tan(\\theta)$ has range $(-\\infty, \\infty)$</div>
@@ -1376,7 +1376,7 @@
 
 - category: "Trigonometry"
   question: "What is the range of $y = \\arctan(x)$ or $\\tan^{-1}(x)$?"
-  answer: "Range: $(-\pi/2, \pi/2)$ or $(-90°, 90°)$"
+  answer: "Range: $(-\\pi/2, \\pi/2)$ or $(-90°, 90°)$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arctan(1)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Ask: "What angle has tangent = $1$?"</div>
@@ -1385,7 +1385,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\arcsin(1/2)$?"
-  answer: "$\arcsin(1/2) = \pi/6$ or $30°$"
+  answer: "$\\arcsin(1/2) = \\pi/6$ or $30°$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arcsin(\\frac{1}{2})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> We need an angle $\\theta$ such that $\\sin(\\theta) = \\frac{1}{2}$</div>
@@ -1394,7 +1394,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\arccos(\\sqrt{2}/2)$?"
-  answer: "$\arccos(\sqrt{2}/2) = \pi/4$ or $45°$"
+  answer: "$\\arccos(\\sqrt{2}/2) = \\pi/4$ or $45°$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arccos(\\frac{\\sqrt{2}}{2})$.</p>
     <div class="step"><span class="step-label">Step 1:</span> We need an angle $\\theta$ such that $\\cos(\\theta) = \\frac{\\sqrt{2}}{2}$</div>
@@ -1403,7 +1403,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\arctan(1)$?"
-  answer: "$\arctan(1) = \pi/4$ or $45°$"
+  answer: "$\\arctan(1) = \\pi/4$ or $45°$"
   example: |
     <p><strong>Example:</strong> Evaluate $\\arctan(1)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> We need an angle $\\theta$ such that $\\tan(\\theta) = 1$</div>
@@ -1412,7 +1412,7 @@
 
 - category: "Trigonometry"
   question: "In a right triangle, if you know one angle and one side, how do you find the other sides?"
-  answer: "Use trigonometric ratios: opposite = hypotenuse $\times \sin(\theta)$, adjacent = hypotenuse $\times \cos(\theta)$, hypotenuse = opposite $/ \sin(\theta)$ or adjacent $/ \cos(\theta)$"
+  answer: "Use trigonometric ratios: opposite = hypotenuse $\\times \\sin(\\theta)$, adjacent = hypotenuse $\\times \\cos(\\theta)$, hypotenuse = opposite $/ \\sin(\\theta)$ or adjacent $/ \\cos(\\theta)$"
   example: |
     <p><strong>Example:</strong> In a right triangle, angle $\\theta = 30°$ and hypotenuse = $10$. Find the opposite side.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use: opposite = hypotenuse $\\times \\sin(\\theta)$</div>
@@ -1421,7 +1421,7 @@
 
 - category: "Trigonometry"
   question: "What is the Law of Sines?"
-  answer: "$\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}$ where $a, b, c$ are sides opposite angles $A, B, C$"
+  answer: "$\\frac{a}{\\sin(A)} = \\frac{b}{\\sin(B)} = \\frac{c}{\\sin(C)}$ where $a, b, c$ are sides opposite angles $A, B, C$"
   example: |
     <p><strong>Example:</strong> In triangle $ABC$, angle $A = 30°$, angle $B = 45°$, and side $a = 10$. Find side $b$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use Law of Sines: $\\frac{a}{\\sin(A)} = \\frac{b}{\\sin(B)}$</div>
@@ -1440,7 +1440,7 @@
 
 - category: "Trigonometry"
   question: "What is the Law of Cosines?"
-  answer: "$a^2 = b^2 + c^2 - 2bc\cos(A)$ (and similar for $b^2$ and $c^2$)"
+  answer: "$a^2 = b^2 + c^2 - 2bc\\cos(A)$ (and similar for $b^2$ and $c^2$)"
   example: |
     <p><strong>Example:</strong> In triangle $ABC$, side $b = 5$, side $c = 7$, and angle $A = 60°$. Find side $a$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use Law of Cosines: $a^2 = b^2 + c^2 - 2bc\\cos(A)$</div>
@@ -1459,7 +1459,7 @@
 
 - category: "Trigonometry"
   question: "What is the area of a triangle given two sides and the included angle?"
-  answer: "$A = \frac{1}{2}ab\sin(C)$ where $a$ and $b$ are sides and $C$ is the included angle"
+  answer: "$A = \\frac{1}{2}ab\\sin(C)$ where $a$ and $b$ are sides and $C$ is the included angle"
   example: |
     <p><strong>Example:</strong> Find the area of a triangle with sides $a = 6$, $b = 8$, and included angle $C = 30°$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use formula: $A = \\frac{1}{2}ab\\sin(C)$</div>
@@ -1468,7 +1468,7 @@
 
 - category: "Trigonometry"
   question: "What is Heron's formula for area of a triangle?"
-  answer: "$A = \sqrt{s(s-a)(s-b)(s-c)}$ where $s = \frac{a+b+c}{2}$ (semi-perimeter)"
+  answer: "$A = \\sqrt{s(s-a)(s-b)(s-c)}$ where $s = \\frac{a+b+c}{2}$ (semi-perimeter)"
   example: |
     <p><strong>Example:</strong> Find the area of a triangle with sides $a = 5$, $b = 6$, $c = 7$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Find semi-perimeter: $s = \\frac{5+6+7}{2} = 9$</div>
@@ -1477,7 +1477,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin^2(\\theta) + \\cos^2(\\theta)$ equal to?"
-  answer: "$\sin^2(\theta) + \cos^2(\theta) = 1$ (Pythagorean identity)"
+  answer: "$\\sin^2(\\theta) + \\cos^2(\\theta) = 1$ (Pythagorean identity)"
   example: |
     <p><strong>Example:</strong> Simplify $\\sin^2(\\theta) + \\cos^2(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> This is the fundamental Pythagorean identity</div>
@@ -1486,7 +1486,7 @@
 
 - category: "Trigonometry"
   question: "If $\\sin(\\theta) = 3/5$ and $\\theta$ is in quadrant I, what is $\\cos(\\theta)$?"
-  answer: "Use identity: $\cos^2(\theta) = 1 - \sin^2(\theta) = 1 - (3/5)^2 = 16/25$, so $\cos(\theta) = 4/5$ (positive in QI)"
+  answer: "Use identity: $\\cos^2(\\theta) = 1 - \\sin^2(\\theta) = 1 - (3/5)^2 = 16/25$, so $\\cos(\\theta) = 4/5$ (positive in QI)"
   example: |
     <p><strong>Example:</strong> If $\\sin(\\theta) = \\frac{3}{5}$ and $\\theta$ is in quadrant I, find $\\cos(\\theta)$.</p>
     <div class="step"><span class="step-label">Step 1:</span> Use identity: $\\cos^2(\\theta) = 1 - \\sin^2(\\theta)$</div>
@@ -1496,7 +1496,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(\\pi - \\theta)$ equal to?"
-  answer: "$\sin(\pi - \theta) = \sin(\theta)$"
+  answer: "$\\sin(\\pi - \\theta) = \\sin(\\theta)$"
   example: |
     <p><strong>Example:</strong> Use the identity to find $\\sin(120°)$ if you know $\\sin(60°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $120° = 180° - 60° = \\pi - 60°$</div>
@@ -1505,7 +1505,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(\\pi - \\theta)$ equal to?"
-  answer: "$\cos(\pi - \theta) = -\cos(\theta)$"
+  answer: "$\\cos(\\pi - \\theta) = -\\cos(\\theta)$"
   example: |
     <p><strong>Example:</strong> Use the identity to find $\\cos(120°)$ if you know $\\cos(60°) = \\frac{1}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $120° = 180° - 60° = \\pi - 60°$</div>
@@ -1514,7 +1514,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\sin(\\pi/2 - \\theta)$ equal to?"
-  answer: "$\sin(\pi/2 - \theta) = \cos(\theta)$"
+  answer: "$\\sin(\\pi/2 - \\theta) = \\cos(\\theta)$"
   example: |
     <p><strong>Example:</strong> Use the identity to find $\\sin(30°)$ if you know $\\cos(60°) = \\frac{1}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $30° = 90° - 60° = \\pi/2 - 60°$</div>
@@ -1523,7 +1523,7 @@
 
 - category: "Trigonometry"
   question: "What is $\\cos(\\pi/2 - \\theta)$ equal to?"
-  answer: "$\cos(\pi/2 - \theta) = \sin(\theta)$"
+  answer: "$\\cos(\\pi/2 - \\theta) = \\sin(\\theta)$"
   example: |
     <p><strong>Example:</strong> Use the identity to find $\\cos(30°)$ if you know $\\sin(60°) = \\frac{\\sqrt{3}}{2}$.</p>
     <div class="step"><span class="step-label">Step 1:</span> $30° = 90° - 60° = \\pi/2 - 60°$</div>
