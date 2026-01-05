@@ -813,6 +813,17 @@
     <div class="step"><span class="step-label">Step 3:</span> Sum frequencies: $5 + 8 + 12 = 25$</div>
     <div class="step"><span class="step-label">Step 4:</span> Weighted mean = $\frac{2160}{25} = 86.4$</div>
     <p><strong>Answer:</strong> Weighted mean = $86.4$</p>
+- category: "Probability & Statistics"
+  question: "If 4 numbers have an average of 20, what number must be added to make the new average 18?"
+  answer: 'Find current sum = average × count = $20 \times 4 = 80$. New sum = new average × new count = $18 \times 5 = 90$. The number to add = $90 - 80 = 10$'
+  example: |
+    <p><strong>Example:</strong> If 4 numbers have an average of 20, what number must be added to make the new average 18?</p>
+    <div class="step"><span class="step-label">Step 1:</span> Current sum = average × count = $20 \times 4 = 80$</div>
+    <div class="step"><span class="step-label">Step 2:</span> After adding one number, we have 5 numbers total</div>
+    <div class="step"><span class="step-label">Step 3:</span> New sum = new average × new count = $18 \times 5 = 90$</div>
+    <div class="step"><span class="step-label">Step 4:</span> The number to add = new sum - current sum = $90 - 80 = 10$</div>
+    <div class="step"><span class="step-label">Check:</span> New average = $\frac{80 + 10}{5} = \frac{90}{5} = 18$ ✓</div>
+    <p><strong>Answer:</strong> The fifth number must be $10$</p>
 
 - category: "Trigonometry"
   question: "What does SOH-CAH-TOA stand for?"
