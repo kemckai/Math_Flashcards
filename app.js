@@ -105,7 +105,7 @@ class FlashCardApp {
 
         // Update content
         this.questionText.textContent = card.question;
-        this.answerText.textContent = card.answer;
+        this.answerText.innerHTML = card.answer;
         
         // Update category badges
         this.categoryBadge.forEach(badge => {
@@ -157,6 +157,13 @@ class FlashCardApp {
         if (this.filteredCards.length === 0) return '';
         
         const card = this.filteredCards[this.currentIndex];
+        
+        // If card has an example field, use it
+        if (card.example) {
+            return card.example;
+        }
+        
+        // Fallback to pattern matching for backwards compatibility
         const category = card.category;
         const question = card.question.toLowerCase();
 
