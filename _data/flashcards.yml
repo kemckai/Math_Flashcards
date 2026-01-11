@@ -1560,3 +1560,209 @@
     <div class="step"><span class="step-label">Step 1:</span> $30° = 90° - 60° = \\pi/2 - 60°$</div>
     <div class="step"><span class="step-label">Step 2:</span> $\\cos(\\pi/2 - \\theta) = \\sin(\\theta)$, so $\\cos(30°) = \\sin(60°)$</div>
     <p><strong>Answer:</strong> $\\cos(30°) = \\sin(60°) = \\frac{\\sqrt{3}}{2}$</p>
+- category: "Circuits"
+  question: "What is Ohm's Law?"
+  answer: '$V = I \times R$ where $V$ = voltage (volts), $I$ = current (amperes), $R$ = resistance (ohms). Also: $I = V/R$ and $R = V/I$'
+  example: |
+    <p><strong>Example:</strong> A circuit has a voltage of $12$ V and a resistance of $4$ Ω. Find the current.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Use Ohm's Law: $I = V/R$</div>
+    <div class="step"><span class="step-label">Step 2:</span> Substitute: $I = 12/4 = 3$ A</div>
+    <p><strong>Answer:</strong> Current = $3$ A</p>
+- category: "Circuits"
+  question: "What are the power formulas in DC circuits?"
+  answer: '$P = V \times I$, $P = I^2 \times R$, or $P = V^2 / R$ where $P$ = power (watts)'
+  example: |
+    <p><strong>Example:</strong> A resistor of $5$ Ω carries a current of $2$ A. Find the power.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Use $P = I^2 R$</div>
+    <div class="step"><span class="step-label">Step 2:</span> Substitute: $P = (2)^2 \times 5 = 4 \times 5 = 20$ W</div>
+    <p><strong>Answer:</strong> Power = $20$ W</p>
+- category: "Circuits"
+  question: "How do you calculate energy in a circuit?"
+  answer: '$E = P \times t$ (joules, where $t$ is in seconds) or Energy = $(P$ in kW$) \times (t$ in hours$) = $ kWh'
+  example: |
+    <p><strong>Example:</strong> A $100$ W light bulb runs for $2$ hours. How much energy does it consume?</p>
+    <div class="step"><span class="step-label">Step 1:</span> Convert power: $100$ W = $0.1$ kW</div>
+    <div class="step"><span class="step-label">Step 2:</span> Energy = $0.1$ kW $× 2$ hours = $0.2$ kWh</div>
+    <p><strong>Answer:</strong> Energy = $0.2$ kWh</p>
+- category: "Circuits"
+  question: "What is Kirchhoff's Current Law (KCL)?"
+  answer: 'At any node/junction: $Σ I_{in} = Σ I_{out}$ (sum of currents entering = sum leaving, or algebraic sum = 0)'
+  example: |
+    <p><strong>Example:</strong> At a junction, currents of $2$ A and $3$ A enter, and $1$ A leaves. What is the third current leaving?</p>
+    <div class="step"><span class="step-label">Step 1:</span> Apply KCL: $I_{in} = I_{out}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $2 + 3 = 1 + I_3$</div>
+    <div class="step"><span class="step-label">Step 3:</span> $I_3 = 5 - 1 = 4$ A</div>
+    <p><strong>Answer:</strong> The third current = $4$ A (leaving)</p>
+- category: "Circuits"
+  question: "What is Kirchhoff's Voltage Law (KVL)?"
+  answer: 'Around any closed loop: $Σ V = 0$ (algebraic sum of voltage rises = sum of voltage drops)'
+  example: |
+    <p><strong>Example:</strong> In a loop with a $12$ V source and two resistors with drops of $5$ V and $4$ V, what is the third voltage drop?</p>
+    <div class="step"><span class="step-label">Step 1:</span> Apply KVL: $Σ V = 0$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $12 - 5 - 4 - V_3 = 0$ (rises positive, drops negative)</div>
+    <div class="step"><span class="step-label">Step 3:</span> $V_3 = 12 - 5 - 4 = 3$ V</div>
+    <p><strong>Answer:</strong> Third voltage drop = $3$ V</p>
+- category: "Circuits"
+  question: "How do you calculate total resistance for resistors in series?"
+  answer: '$R_{total} = R_1 + R_2 + R_3 + \ldots$'
+  example: |
+    <p><strong>Example:</strong> Three resistors in series: $R_1 = 3$ Ω, $R_2 = 5$ Ω, $R_3 = 2$ Ω. Find total resistance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $R_{total} = R_1 + R_2 + R_3$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $R_{total} = 3 + 5 + 2 = 10$ Ω</div>
+    <p><strong>Answer:</strong> Total resistance = $10$ Ω</p>
+- category: "Circuits"
+  question: "How do you calculate total resistance for resistors in parallel?"
+  answer: '$\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots$. For two resistors: $R_{total} = \frac{R_1 \times R_2}{R_1 + R_2}$'
+  example: |
+    <p><strong>Example:</strong> Two resistors in parallel: $R_1 = 6$ Ω, $R_2 = 3$ Ω. Find total resistance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Use two-resistor formula: $R_{total} = \frac{R_1 \times R_2}{R_1 + R_2}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $R_{total} = \frac{6 \times 3}{6 + 3} = \frac{18}{9} = 2$ Ω</div>
+    <p><strong>Answer:</strong> Total resistance = $2$ Ω</p>
+- category: "Circuits"
+  question: "How do you calculate total capacitance for capacitors in series?"
+  answer: '$\frac{1}{C_{total}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \ldots$'
+  example: |
+    <p><strong>Example:</strong> Two capacitors in series: $C_1 = 6$ μF, $C_2 = 3$ μF. Find total capacitance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $\frac{1}{C_{total}} = \frac{1}{C_1} + \frac{1}{C_2}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $\frac{1}{C_{total}} = \frac{1}{6} + \frac{1}{3} = \frac{1}{6} + \frac{2}{6} = \frac{3}{6} = \frac{1}{2}$</div>
+    <div class="step"><span class="step-label">Step 3:</span> $C_{total} = 2$ μF</div>
+    <p><strong>Answer:</strong> Total capacitance = $2$ μF</p>
+- category: "Circuits"
+  question: "How do you calculate total capacitance for capacitors in parallel?"
+  answer: '$C_{total} = C_1 + C_2 + C_3 + \ldots$'
+  example: |
+    <p><strong>Example:</strong> Three capacitors in parallel: $C_1 = 4$ μF, $C_2 = 6$ μF, $C_3 = 2$ μF. Find total capacitance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $C_{total} = C_1 + C_2 + C_3$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $C_{total} = 4 + 6 + 2 = 12$ μF</div>
+    <p><strong>Answer:</strong> Total capacitance = $12$ μF</p>
+- category: "Circuits"
+  question: "How do you calculate total inductance for inductors in series?"
+  answer: '$L_{total} = L_1 + L_2 + L_3 + \ldots$'
+  example: |
+    <p><strong>Example:</strong> Three inductors in series: $L_1 = 2$ mH, $L_2 = 3$ mH, $L_3 = 1$ mH. Find total inductance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $L_{total} = L_1 + L_2 + L_3$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $L_{total} = 2 + 3 + 1 = 6$ mH</div>
+    <p><strong>Answer:</strong> Total inductance = $6$ mH</p>
+- category: "Circuits"
+  question: "How do you calculate total inductance for inductors in parallel?"
+  answer: '$\frac{1}{L_{total}} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} + \ldots$'
+  example: |
+    <p><strong>Example:</strong> Two inductors in parallel: $L_1 = 6$ mH, $L_2 = 3$ mH. Find total inductance.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $\frac{1}{L_{total}} = \frac{1}{L_1} + \frac{1}{L_2}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $\frac{1}{L_{total}} = \frac{1}{6} + \frac{1}{3} = \frac{1}{6} + \frac{2}{6} = \frac{3}{6} = \frac{1}{2}$</div>
+    <div class="step"><span class="step-label">Step 3:</span> $L_{total} = 2$ mH</div>
+    <p><strong>Answer:</strong> Total inductance = $2$ mH</p>
+- category: "Circuits"
+  question: "What is capacitive reactance?"
+  answer: '$X_C = \frac{1}{2\pi f C}$ where $f$ = frequency (Hz), $C$ = capacitance (farads)'
+  example: |
+    <p><strong>Example:</strong> Find capacitive reactance for $C = 10$ μF at $f = 60$ Hz.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $X_C = \frac{1}{2\pi f C}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $X_C = \frac{1}{2\pi \times 60 \times 10 \times 10^{-6}} = \frac{1}{0.00377} ≈ 265$ Ω</div>
+    <p><strong>Answer:</strong> Capacitive reactance ≈ $265$ Ω</p>
+- category: "Circuits"
+  question: "What is inductive reactance?"
+  answer: '$X_L = 2\pi f L$ where $f$ = frequency (Hz), $L$ = inductance (henries)'
+  example: |
+    <p><strong>Example:</strong> Find inductive reactance for $L = 0.1$ H at $f = 60$ Hz.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $X_L = 2\pi f L$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $X_L = 2\pi \times 60 \times 0.1 = 12\pi ≈ 37.7$ Ω</div>
+    <p><strong>Answer:</strong> Inductive reactance ≈ $37.7$ Ω</p>
+- category: "Circuits"
+  question: "How do you calculate impedance magnitude in AC circuits?"
+  answer: '$|Z| = \sqrt{R^2 + (X_L - X_C)^2}$ where $R$ = resistance, $X_L$ = inductive reactance, $X_C$ = capacitive reactance'
+  example: |
+    <p><strong>Example:</strong> A circuit has $R = 3$ Ω, $X_L = 4$ Ω, $X_C = 1$ Ω. Find impedance magnitude.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $|Z| = \sqrt{R^2 + (X_L - X_C)^2}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $|Z| = \sqrt{3^2 + (4 - 1)^2} = \sqrt{9 + 9} = \sqrt{18} ≈ 4.24$ Ω</div>
+    <p><strong>Answer:</strong> Impedance magnitude ≈ $4.24$ Ω</p>
+- category: "Circuits"
+  question: "How do you calculate the phase angle of impedance?"
+  answer: '$\theta = \tan^{-1}\left(\frac{X_L - X_C}{R}\right)$ where $R$ = resistance, $X_L$ = inductive reactance, $X_C$ = capacitive reactance'
+  example: |
+    <p><strong>Example:</strong> A circuit has $R = 3$ Ω, $X_L = 4$ Ω, $X_C = 1$ Ω. Find the phase angle.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $\theta = \tan^{-1}\left(\frac{X_L - X_C}{R}\right)$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $\theta = \tan^{-1}\left(\frac{4 - 1}{3}\right) = \tan^{-1}(1) = 45°$</div>
+    <p><strong>Answer:</strong> Phase angle = $45°$</p>
+- category: "Circuits"
+  question: "What is generalized Ohm's Law for AC circuits?"
+  answer: '$V = I \times Z$ (phasor form) where $V$ = voltage, $I$ = current, $Z$ = impedance'
+  example: |
+    <p><strong>Example:</strong> An AC circuit has current $I = 2$ A and impedance $Z = 5$ Ω. Find the voltage.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Use $V = I \times Z$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $V = 2 \times 5 = 10$ V</div>
+    <p><strong>Answer:</strong> Voltage = $10$ V</p>
+- category: "Circuits"
+  question: "What are the AC power formulas?"
+  answer: 'Apparent power: $S = V_{rms} \times I_{rms}$ (VA). Real power: $P = V_{rms} \times I_{rms} \times \cos\phi$ (W). Reactive power: $Q = V_{rms} \times I_{rms} \times \sin\phi$ (VAR)'
+  example: |
+    <p><strong>Example:</strong> An AC circuit has $V_{rms} = 120$ V, $I_{rms} = 5$ A, phase angle $\phi = 30°$. Find real power.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $P = V_{rms} \times I_{rms} \times \cos\phi$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $P = 120 \times 5 \times \cos(30°) = 600 \times \frac{\sqrt{3}}{2} ≈ 519.6$ W</div>
+    <p><strong>Answer:</strong> Real power ≈ $519.6$ W</p>
+- category: "Circuits"
+  question: "What is power factor?"
+  answer: 'Power factor = $\cos\phi = \frac{P}{S}$ where $\phi$ = phase angle, $P$ = real power, $S$ = apparent power'
+  example: |
+    <p><strong>Example:</strong> A circuit has real power $P = 400$ W and apparent power $S = 500$ VA. Find the power factor.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Power factor = $\frac{P}{S}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> Power factor = $\frac{400}{500} = 0.8$</div>
+    <p><strong>Answer:</strong> Power factor = $0.8$ (or $80\%$)</p>
+- category: "Circuits"
+  question: "What is the Superposition Theorem?"
+  answer: 'For linear circuits: Total response = algebraic sum of responses from each source acting alone (turn off other sources: voltage → short circuit, current → open circuit)'
+  example: |
+    <p><strong>Example:</strong> Find current through $R_1$ in a circuit with two voltage sources. Use superposition: find current from source 1 (source 2 off), then from source 2 (source 1 off), then add.</p>
+    <div class="step"><span class="step-label">Step 1:</span> Turn off source 2 (short circuit), find $I_1$ from source 1</div>
+    <div class="step"><span class="step-label">Step 2:</span> Turn off source 1 (short circuit), find $I_2$ from source 2</div>
+    <div class="step"><span class="step-label">Step 3:</span> Total current = $I_1 + I_2$</div>
+    <p><strong>Answer:</strong> Superposition: total response = sum of individual source responses</p>
+- category: "Circuits"
+  question: "What is Thevenin's Theorem?"
+  answer: 'Any linear two-terminal network = $V_{Th}$ (open-circuit voltage) in series with $R_{Th}$ (equivalent resistance with sources deactivated). Load current: $I_L = \frac{V_{Th}}{R_{Th} + R_L}$'
+  example: |
+    <p><strong>Example:</strong> Find Thevenin equivalent: $V_{Th} = 10$ V, $R_{Th} = 2$ Ω. If $R_L = 3$ Ω, find load current.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $I_L = \frac{V_{Th}}{R_{Th} + R_L}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $I_L = \frac{10}{2 + 3} = \frac{10}{5} = 2$ A</div>
+    <p><strong>Answer:</strong> Load current = $2$ A</p>
+- category: "Circuits"
+  question: "What is Norton's Theorem?"
+  answer: 'Any linear two-terminal network = $I_N$ (short-circuit current) in parallel with $R_N$ (same as $R_{Th}$). Load current: $I_L = I_N \times \frac{R_N}{R_N + R_L}$'
+  example: |
+    <p><strong>Example:</strong> Find Norton equivalent: $I_N = 5$ A, $R_N = 2$ Ω. If $R_L = 3$ Ω, find load current.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $I_L = I_N \times \frac{R_N}{R_N + R_L}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $I_L = 5 \times \frac{2}{2 + 3} = 5 \times \frac{2}{5} = 2$ A</div>
+    <p><strong>Answer:</strong> Load current = $2$ A</p>
+- category: "Circuits"
+  question: "What is the Maximum Power Transfer Theorem?"
+  answer: 'Maximum power to load occurs when $R_L = R_{Th}$ (for DC) or $Z_L = Z_{Th}^*$ (conjugate, for AC)'
+  example: |
+    <p><strong>Example:</strong> A Thevenin equivalent has $R_{Th} = 4$ Ω. What load resistance gives maximum power transfer?</p>
+    <div class="step"><span class="step-label">Step 1:</span> Maximum power when $R_L = R_{Th}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $R_L = 4$ Ω</div>
+    <p><strong>Answer:</strong> Load resistance = $4$ Ω for maximum power transfer</p>
+- category: "Circuits"
+  question: "What is the time constant for an RC circuit?"
+  answer: '$\tau = R \times C$ (seconds) where $R$ = resistance (ohms), $C$ = capacitance (farads)'
+  example: |
+    <p><strong>Example:</strong> An RC circuit has $R = 1000$ Ω and $C = 100$ μF. Find the time constant.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $\tau = R \times C$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $\tau = 1000 \times 100 \times 10^{-6} = 0.1$ s</div>
+    <p><strong>Answer:</strong> Time constant = $0.1$ s</p>
+- category: "Circuits"
+  question: "What is the time constant for an RL circuit?"
+  answer: '$\tau = \frac{L}{R}$ (seconds) where $L$ = inductance (henries), $R$ = resistance (ohms)'
+  example: |
+    <p><strong>Example:</strong> An RL circuit has $L = 0.5$ H and $R = 100$ Ω. Find the time constant.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $\tau = \frac{L}{R}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $\tau = \frac{0.5}{100} = 0.005$ s = $5$ ms</div>
+    <p><strong>Answer:</strong> Time constant = $5$ ms</p>
+- category: "Circuits"
+  question: "What is RMS voltage for sinusoidal AC?"
+  answer: '$V_{rms} = \frac{V_{peak}}{\sqrt{2}}$ for sinusoidal waveforms'
+  example: |
+    <p><strong>Example:</strong> A sinusoidal AC voltage has peak voltage $V_{peak} = 170$ V. Find RMS voltage.</p>
+    <div class="step"><span class="step-label">Step 1:</span> $V_{rms} = \frac{V_{peak}}{\sqrt{2}}$</div>
+    <div class="step"><span class="step-label">Step 2:</span> $V_{rms} = \frac{170}{\sqrt{2}} ≈ 120.2$ V</div>
+    <p><strong>Answer:</strong> RMS voltage ≈ $120.2$ V</p>
+
