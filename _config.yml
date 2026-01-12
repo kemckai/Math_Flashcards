@@ -8,6 +8,11 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - vendor/bundle
+  - node_modules
+  - .github
+  - README.md
 collections:
   flashcards:
     output: false
