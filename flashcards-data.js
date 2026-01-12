@@ -93,7 +93,7 @@ const mathFlashCards = [
       <div class="step"><span class="step-label">Step 2:</span> Add the equations: $(2x + 3y) + (x - 3y) = 7 + (-1)$</div>
       <div class="step"><span class="step-label">Step 3:</span> Simplify: $3x = 6$ → $x = 2$</div>
       <div class="step"><span class="step-label">Step 4:</span> Substitute $x = 2$ into first equation: $2(2) + 3y = 7$ → $3y = 3$ → $y = 1$</div>
-      <p><strong>Answer:</strong> $x = 2$, $y = 1$</p>`kyl
+      <p><strong>Answer:</strong> $x = 2$, $y = 1$</p>`
   },
   {
     category: "Systems of Equations",
