@@ -5,17 +5,6 @@ url: "https://kemckai.github.io"
 markdown: kramdown
 plugins:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor/
-  - vendor/bundle/
-  - node_modules/
-  - .github/
-  - README.md
-  - .sass-cache/
-  - .jekyll-cache/
-  - .jekyll-metadata
 collections:
   flashcards:
     output: false
