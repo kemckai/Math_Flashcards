@@ -8,11 +8,14 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor
-  - vendor/bundle
-  - node_modules
-  - .github
+  - vendor/
+  - vendor/bundle/
+  - node_modules/
+  - .github/
   - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
 collections:
   flashcards:
     output: false
